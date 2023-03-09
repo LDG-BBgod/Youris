@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/addPage.css' %}?ver=5">
+{% endblock %}
+
+{% block contents %}
+<div class="inner">
+    <div class="title">과거 연평균 주행거리(즉시할인)</div>
+    <div class="subject">과거 연평균 주행거리란?</div>
+    <pre class="text">
+차량이 고객님 소유로 등록된 이후의 총 주행거리를 보험회사가 정하는 방법에 따라 연간 주행거리로 환산한 것
+    </pre>
+    <div class="subject">유형별 연평균 주행거리 계산법</div>
+    <pre class="text">
+①신차 구입 후 1년 이상 소유 고객
+(현재 주행거리 ÷ 특약가입일-차량등록일)×365일
+
+②중고차 구입 후 1년이상 소유 고객
+보험가입일로부터 1년전에 자동차등록원부상 자동차검사등의 사유로 주행거리가 기재된 경우 가입 가능
+(현재 주행거리-원부상 주행거리)÷(특약가입일-원부상 주행거리 등록일)×365일
+
+③전계약이 한화&마일리지특약 정산 완료 고객
+전계약 마일리지 정산 주행거리를 과거연평균 주행거리로 활용
+
+*‘자동차보험에 처음 가입하는 고객’, ‘차량 소유기간이 1년이 지나지 않은 고객’은 일반 마일리지(후정산) 특약으로 가입 가능합니다.
+    </pre>
+</div>
+
+{% endblock %}

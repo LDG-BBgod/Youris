@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}?ver=1.4">
+<script>
+    const userIP = "{{ userIP }}"
+</script>
+<script defer src="{% static 'js/userChat.js' %}?ver=1.4"></script>
+<script defer src="{% static 'js/home.js' %}?ver=1.4"></script>
+{% endblock %}
+
+{% block contents %}
+<section class="sectionFix" style="display: none;">
+    <div class="chatBox">
+        <div class="chatBoxHead">
+            <img class="hover" src="../../static/img/home_chatBack.svg" alt="뒤로가기" onclick="closeChat()">
+        </div>
+        <div class="chatBoxMiddle">
+            
+        </div>
+        <div class="chatBoxFoot">
+            <textarea id="message" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+            <button id="sendButton"><img src="../../static/img/sendButton.svg" alt=""></button>
+        </div>
+    </div>
+</section>
+<div class="mobileChatsection" style="display: none;">
+    <div class="chatGroup">
+        <textarea id="messageMobile" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+        <button id="sendButtonMobile"><img src="../../static/img/sendButton.svg" alt=""></button>
+    </div>
+</div>
+<section class="section1">
+    <div class="positionBox">
+        <div class="title">한눈에보는 자동차보험<br>보험비서 카봇이 도와드립니다</div>
+        <img src="../../static/img/home_section1_img.svg" alt="">
+        <a class="alert" href="#" onclick="CountButton('selfCompareCount')"><button class="button hover">자동차보험료 Self비교</button></a>
+    </div>
+</section>
+<section class="section2" id="section2">
+    <div class="positionBox">
+        <div class="title">Self비교가입이 어려우신가요?<br>보험비서 카봇에게 문의하세요</div>
+        <img src="../../static/img/home_section2_img.svg" alt="">
+        <div class="buttonGroup">
+            <a href="/consulting"><button class="button hover" onclick="CountButton('consultingCount')">전화상담 가입</button></a>
+            <button class="button hover" onclick="OpenChat(); CountButton('chatCount')">실시간 채팅상담</button>
+        </div>
+    </div>
+</section>
+<section class="section3">
+    <div class="positionBox">
+        <div class="title">자동차보험료 Self 비교 <br class="br">광고전화없이 한눈에 확인해보세요</div>
+        <div class="ulBox">
+            <ul id="section3Imgs">
+                <li>
+                    <div class="subTitle">개인인증</div>
+                    <img src="../../static/img/home_section3_img1.svg" alt="section3_img">
+                </li>
+                <li>
+                    <div class="subTitle">조건입력</div>
+                    <img src="../../static/img/home_section3_img2.svg" alt="section3_img">
+                </li>
+                <li>
+                    <div class="subTitle">보험료 Check</div>
+                    <img src="../../static/img/home_section3_img3.svg" alt="section3_img">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img class="arrowLeft hover" src="../../static/img/home_section3_arrow_left.svg" alt="화살표">
+    <img class="arrowRight hover" src="../../static/img/home_section3_arrow_right.svg" alt="화살표">
+</section>
+<section class="section4">
+    <div class="positionBox">
+        <div class="title">Self 가입이 어려우시면 <br class="br">카봇이 도와드립니다 </div>
+        <ul>
+            <li>
+                <div class="subTitle">전화상담</div>
+                <img src="../../static/img/home_section4_img1.svg" alt="section3_img">
+                <div class="content">전화상담을통해 최적의 보험료로 가입상담을 진행해 보세요.</div>
+                <div class="subContent">(예약외 전화는 가지않습니다)</div>
+            </li>
+            <li>
+                <div class="subTitle">실시간 채팅상담</div>
+                <img src="../../static/img/home_section4_img2.svg" alt="section3_img">
+                <div class="content">실시간 채팅을 통해 <br class="br">궁금한 점을 도와드립니다.</div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section5">
+    <div class="box1">
+        <div class="title">보험비서 카봇을 채용해주세요</div>
+        <div class="subTitle">카봇은 영업전화 없이 <br class="br">고객님의 비서가 되어드립니다</div>
+    </div>
+    <div class="box2 gridBox">
+        <ul>
+            <li>
+                <img src="../../static/img/home_section5_img1.svg" alt="이미지">
+            </li>
+            <li>
+                <div class="title">먼저 광고, 연락하지 않습니다.</div>
+                <div class="content">GABOT은 고객님이 서비스를 이용하셔도 절대 먼저 연락드리지 않습니다. 사용 이후 광고성 전화나 메시지도 가지 않습니다. 고객님이 편하신 시간과 상황에 연락주시거나, 예약을 남겨주시면 됩니다.</div>
+            </li>
+        </ul>
+    </div>
+    <div class="box3 gridBox">
+        <ul>
+            <li>
+                <div class="title">개인화 서비스를 제공합니다.</div>
+                <div class="content">GABOT은 적합보험을 찾는 일에 집중합니다. 고객님만의 상황과 원하시는 조건에 맞춰 요약된 설명을 해드립니다. 이후 고객님이 원하시는 방향으로 수정 가능합니다.</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section5_img2.svg" alt="이미지">
+            </li>
+        </ul>
+    </div>
+    <div class="box4 gridBox">
+        <ul>
+            <li>
+                <img src="../../static/img/home_section5_img3.svg" alt="이미지">
+            </li>
+            <li>
+                <div class="title">정보를 거래하지 않습니다.</div>
+                <div class="content">GABOT은 최소한의 정보만을 가지고 설계하는 것을 지향하며, 고객님을 특정 할 수 있는 정보는 오직 GABOT에서만 관리하며 판매, 유출하지 않습니다.</div>
+            </li>
+        </ul> 
+    </div>
+</section>
+<section class="section6">
+    <div class="positionBox">
+        <div class="title">한눈에보는 자동차보험료 Self비교</div>
+        <div class="subTitle">정보유출 걱정없이 보험료를 비교해보세요. </div>
+        <a class="alert" href="#" onclick="CountButton('selfCompareCount')"><button class="button hover">자동차보험료 Self 비교</button></a>
+    </div>
+    <div class="positionBox">
+        <div class="title">Self 비교가입이 어려우신가요?</div>
+        <div class="subTitle">가입권유 없이 필요상담만 받아보세요.</div>
+        <a href="/consulting" onclick="CountButton('consultingCount')"><button class="button hover">상담예약 하러가기</button></a>
+    </div>
+    <div class="positionBox">
+        <div class="title">전화가 부담스러우신가요?</div>
+        <div class="subTitle">실시간 채팅으로 상담받아보세요.</div>
+        <button class="button hover" onclick="OpenChat(); CountButton('chatCount')">실시간 채팅</button>
+    </div>
+</section>
+{% endblock %}

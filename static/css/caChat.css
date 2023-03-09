@@ -1,0 +1,93 @@
+.sectionFix{
+
+    z-index: 9001;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.sectionFix .chatBox{
+    height: 750px;
+    width: 800px;
+    border-radius: 30px;
+    background-color: #EAF4FF;
+}
+.sectionFix .chatBox .chatBoxHead{
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #5B8DEF;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.sectionFix .chatBox .chatBoxHead img{
+    height: 20px;
+    margin-right: 20px;
+}
+.sectionFix .chatBox .chatBoxMiddle{
+    box-sizing: border-box;
+    height: 640px;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    overflow-y: auto;
+}
+.sectionFix .chatBox .chatBoxMiddle .item:last-child .msgContainer{
+    margin-bottom: 0;
+}
+.sectionFix .chatBox .chatBoxMiddle .myItem{
+    text-align: right;
+}
+.sectionFix .chatBox .chatBoxMiddle .msgContainer{
+    display: inline-block;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 70%;
+
+}
+.sectionFix .chatBox .chatBoxMiddle .myMsgContainer{
+    background-color: #22D800;
+}
+.sectionFix .chatBox .chatBoxMiddle .msg{
+    word-break: break-all;
+    font-size: 16px;
+    line-height: 21px;
+}
+.sectionFix .chatBox .chatBoxMiddle .myMsg{
+    text-align: left;
+}
+.sectionFix .chatBox .chatBoxFoot{
+    position: relative;
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionFix .chatBox .chatBoxFoot textarea{
+    word-break: break-all;
+    position: absolute;
+    box-sizing: border-box;
+    top: 10px;
+    resize: none;
+    width: calc(100% - 40px);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px 0 15px;
+    border: solid 1px #c8c8c8;
+    border-radius: 15px;
+    font-size: 16px;
+    overflow-y: hidden;
+}
+.sectionFix .chatBox .chatBoxFoot button{
+    display: none;
+}
+/***** SECTION FIX *****/
+footer{
+    display: none;
+}

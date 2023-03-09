@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1321" height="85.559" viewBox="0 0 1321 85.559">
+  <g id="그룹_390" data-name="그룹 390" transform="translate(-299 -246.498)">
+    <g id="사각형_657" data-name="사각형 657" transform="translate(1392 246.5)" fill="#fff" stroke="#ccc" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <g id="사각형_658" data-name="사각형 658" transform="translate(1119 246.5)" fill="#fff" stroke="#ccc" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <text id="추가특약" transform="translate(1173 302.279)" fill="#ccc" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">추가특약</tspan></text>
+    <text id="보험료비교" transform="translate(1431 302.279)" fill="#ccc" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">보험료비교</tspan></text>
+    <g id="사각형_706" data-name="사각형 706" transform="translate(299 246.5)" fill="#fff" stroke="#5b8def" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <text id="개인인증" transform="translate(353 302.278)" fill="#5b8def" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">개인인증</tspan></text>
+    <path id="합치기_3" data-name="합치기 3" d="M0,85.559V0H218V85.559ZM218,35.39l10,7.389-10,7.391Z" transform="translate(846.001 246.498)" fill="#5b8def"/>
+    <text id="가입정보" transform="translate(893.996 302.276)" fill="#fff" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">가입정보</tspan></text>
+    <g id="사각형_724" data-name="사각형 724" transform="translate(570.997 246.5)" fill="#fff" stroke="#5b8def" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <text id="자동차정보" transform="translate(609.999 302.277)" fill="#5b8def" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">자동차정보</tspan></text>
+  </g>
+</svg>

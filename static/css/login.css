@@ -1,0 +1,147 @@
+/***** 공통 *****/
+
+/***** 섹션1 *****/
+.section1{
+    position: relative;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+.section1 .title{
+    margin-top: -70px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #34464B;
+}
+.section1 .input-box{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.section1 .input-box .text1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #34464B;
+    width: 150px;
+}
+.section1 .input-box input{
+    padding-left: 10px;
+    font-size: 20px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+}
+.section1  .error{
+    height: 20px;
+    width: 460px;
+    font-size: 16px;
+    color: #F83D3D;
+    margin-top: 100px;
+}
+.section1 button{
+    margin-top: 10px;
+    background-color: #fff;
+    color: #5b8def;
+    font-size: 40px;
+    font-weight: bold;
+    width: 500px;
+    height: 80px;
+    border: solid 1px #E1E1E1;
+    border-radius: 25px;
+    box-shadow: 4px 4px 7px #D6D6D6;
+}
+.section1 .nav-box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.section1 .nav-box a{
+    font-size: 20px;
+    color: #7B7B7B;
+}
+.section1 .nav-box .dash{
+    margin: 0 15px;
+    font-size: 20px;
+    color: #7B7B7B;
+}
+
+
+
+
+@media (max-width: 600px){
+    /***** 섹션1 *****/
+    .section1{
+        padding: 0 15px;
+        position: relative;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .section1 .title{
+        margin-top: -70px;
+        margin-bottom: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        color: #34464B;
+    }
+    .section1 .input-box{
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .section1 .input-box .text1{
+        font-size: 20px;
+        font-weight: bold;
+        color: #34464B;
+        width: 120px;
+    }
+    .section1 .input-box input{
+        padding-left: 10px;
+        font-size: 16px;
+        border: solid 1px #000;
+        border-radius: 5px;
+        height: 30px;
+        width: calc(100% - 120px);
+    }
+    .section1  .error{
+        height: 20px;
+        width: 460px;
+        font-size: 16px;
+        color: #F83D3D;
+        margin-top: 100px;
+    }
+    .section1 button{
+        margin-top: 10px;
+        background-color: #fff;
+        color: #5b8def;
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        height: 45px;
+        border: solid 1px #E1E1E1;
+        border-radius: 10px;
+        box-shadow: 4px 4px 3px #D6D6D6;
+    }
+    .section1 .nav-box{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .section1 .nav-box a{
+        font-size: 14px;
+        color: #7B7B7B;
+    }
+    .section1 .nav-box .dash{
+        margin: 0 15px;
+        font-size: 14px;
+        color: #7B7B7B;
+    }
+
+}

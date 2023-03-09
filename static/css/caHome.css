@@ -1,0 +1,25 @@
+.section1{
+    padding-top: 130px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: solid 2px #5b8def;
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+.section1 a span{
+    margin-top: 13px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}

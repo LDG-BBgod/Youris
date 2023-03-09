@@ -1,0 +1,596 @@
+/***** COMMON *****/
+
+.positionBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 80px 0;
+}
+
+/***** COMMON *****/
+
+/***** SECTION FIX *****/
+
+
+/***** SECTION FIX *****/
+
+
+/***** SECTION 1 *****/
+.section1{
+    padding-top: 80px;
+    height: 100%;
+    background-color: #5B8DEF;
+
+}
+.section1 .positionBox{
+
+}
+.section1 .positionBox .title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 65px;
+    color: #fff;
+}
+.section1 .positionBox img{
+    margin: 60px 0;
+}
+.section1 .positionBox button{
+    font-size: 24px;
+    background-color: #22D800;
+    color: #fff;
+}
+/***** SECTION 1 *****/
+
+
+/***** SECTION 2 *****/
+
+.section2{
+
+}
+.section2 .positionBox{
+
+}
+.section2 .positionBox .title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 65px;
+    color: #353535;
+}
+.section2 .positionBox img{
+    margin: 60px 0;
+}
+.section2 .positionBox .buttonGroup{
+    display: flex;
+}
+.section2 .positionBox .buttonGroup button{
+    font-size: 22px;
+    background-color: #5B8DEF;
+    color: #fff;
+    padding: 0.6em 0;
+    width: 220px;
+    margin: 0 40px;
+}
+
+/***** SECTION 2 *****/
+
+
+/***** SECTION 3 *****/
+
+.section3{
+    background-color: #F1F6FF;
+}
+.section3 .positionBox{
+
+}
+.section3 .positionBox .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 65px;
+    color: #353535;
+}
+.section3 .positionBox ul{
+    margin-top: 60px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.section3 .positionBox ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section3 .positionBox ul li .subTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #5B8DEF;
+}
+.section3 .positionBox ul li img{
+    margin-top: 40px;
+    height: 400px;
+}
+.section3 .arrowLeft,
+.section3 .arrowRight{
+    display: none;
+    position: absolute;
+    top: calc(50% + 70px);
+}
+.section3 .arrowLeft{
+    left: 15px;
+}
+.section3 .arrowRight{
+    right: 15px;
+}
+/***** SECTION 3 *****/
+
+
+/***** SECTION 4 *****/
+
+.section4{
+
+}
+.section4 .positionBox{
+
+}
+.section4 .positionBox .title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 65px;
+    color: #353535;
+}
+.section4 .positionBox ul{
+    margin-top: 60px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section4 .positionBox ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4 .positionBox ul li .subTitle{
+    font-size: 26px;
+    font-weight: bold;
+    color: #5B8DEF;
+}
+.section4 .positionBox ul li img{
+    margin-top: 40px;
+    height: 300px;
+}
+.section4 .positionBox ul li .content{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 40px;
+    width: 250px;
+    color: #7B7B7B;
+    text-align: center;
+}
+.section4 .positionBox ul li .subContent{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF5246;
+    text-align: center;
+}
+/***** SECTION 4 *****/
+
+
+/***** SECTION 5 *****/
+
+.section5{
+
+}
+.section5 .box1{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/background.png);
+}
+.section5 .box1 .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #7B7B7B;
+}
+.section5 .box1 .subTitle{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5B8DEF;
+}
+.section5 .box2{
+    background-color: #EAF4FF;
+}
+.section5 .box3{
+    background-color: #D7E9FD;
+}
+.section5 .box4{
+    background-color: #EEEAFC;
+}
+.section5 .gridBox{
+    display: flex;
+    justify-content: center;
+}
+.section5 .gridBox ul{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1100px;
+}
+.section5 .gridBox ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.section5 .gridBox ul li img{
+    margin-left: 50px;
+    height: 300px;
+}
+.section5 .gridBox ul li .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3F3D56;
+    text-align: left;
+}
+.section5 .gridBox ul li .content{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7B7B7B;
+    text-align: left;
+    width: 90%;
+}
+/***** SECTION 5 *****/
+
+
+/***** SECTION 6 *****/
+
+.section6{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.section6 .positionBox{
+    width: 400px;
+    padding: 100px 0;
+}
+.section6 .positionBox .title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #5B8DEF;
+}
+.section6 .positionBox .subTitle{
+    margin-top: 16px;
+    font-size: 18px;
+    color: #7B7B7B;
+    margin-bottom: 50px;
+}
+.section6 .positionBox button{
+    color: #fff;
+    font-size: 18px;
+    padding: 0px;
+    height: 60px;
+    width: 300px;
+    background-color: #5B8DEF;
+}
+.section6 .positionBox:nth-child(2) .title{
+    color: #22D800;
+}
+.section6 .positionBox:nth-child(2) button{
+    background-color: #22D800;
+}
+.section6 .positionBox:last-child .title{
+    color: #34464B;
+}
+.section6 .positionBox:last-child button{
+    background-color: #34464B;
+}
+/***** SECTION 6 *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    /***** COMMON *****/
+    .br{
+        display: block;
+    }
+    .positionBox{
+        padding: 70px 15px;
+    }
+
+    /***** COMMON *****/
+
+    /***** SECTION FIX *****/
+
+    
+    /***** SECTION FIX *****/
+
+
+    /***** SECTION 1 *****/
+    .section1{
+        padding-top: 60px;
+        height: 100%;
+        background-color: #5B8DEF;
+
+    }
+    .section1 .positionBox{
+
+    }
+    .section1 .positionBox .title{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .section1 .positionBox img{
+        margin: 50px 0;
+        height: 120px;
+    }
+    .section1 .positionBox button{
+        font-size: 18px;
+
+    }
+    /***** SECTION 1 *****/
+
+
+    /***** SECTION 2 *****/
+
+    .section2{
+
+    }
+    .section2 .positionBox{
+
+    }
+    .section2 .positionBox .title{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .section2 .positionBox img{
+        height: 120px;
+        margin: 50px 0;
+    }
+    .section2 .positionBox .buttonGroup{
+        box-sizing: border-box;
+    }
+    .section2 .positionBox .buttonGroup button{
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 0.6em 0;
+        width: 140px;
+        margin: 0 10px;
+    }
+
+    /***** SECTION 2 *****/
+
+
+    /***** SECTION 3 *****/
+
+    .section3{
+
+    }
+    .section3 .positionBox{
+        display: block;
+        padding: 70px 0;
+    }
+    .section3 .positionBox .title{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .section3 .positionBox .ulBox{
+        box-sizing: border-box;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .section3 .positionBox ul{
+        box-sizing: border-box;
+        margin-top: 60px;
+        width: 300vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        transition: 0.5s;
+    }
+    .section3 .positionBox ul li{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section3 .positionBox ul li .subTitle{
+        font-size: 30px;
+        font-weight: bold;
+        color: #5B8DEF;
+    }
+    .section3 .positionBox ul li img{
+        margin-top: 40px;
+        height: auto;
+        width: 240px;
+    }
+    .section3 .arrowLeft,
+    .section3 .arrowRight{
+        display: block;
+    }
+    /***** SECTION 3 *****/
+
+
+    /***** SECTION 4 *****/
+
+    .section4{
+
+    }
+    .section4 .positionBox{
+
+    }
+    .section4 .positionBox .title{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .section4 .positionBox ul{
+        box-sizing: border-box;
+        margin-top: 40px;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .section4 .positionBox ul li{
+    }
+    .section4 .positionBox ul li:last-child{
+        margin-top: 60px;
+    }
+    .section4 .positionBox ul li .subTitle{
+        font-size: 26px;
+    }
+    .section4 .positionBox ul li img{
+        margin-top: 30px;
+    }
+    .section4 .positionBox ul li .content{
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 25px;
+        width: 250px;
+    }
+    .section4 .positionBox ul li .subContent{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    /***** SECTION 4 *****/
+
+
+    /***** SECTION 5 *****/
+
+    .section5{
+
+    }
+    .section5 .box1{
+        padding: 50px 0;
+    }
+    .section5 .box1 .title{
+        font-size: 14px;
+    }
+    .section5 .box1 .subTitle{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .section5 .gridBox{
+
+    }
+    .section5 .box3 ul li:first-child{
+        order: 2;
+    }
+    .section5 .box3 ul li:last-child{
+        order: 1;
+    }
+    .section5 .gridBox ul{
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .section5 .gridBox ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section5 .gridBox ul li img{
+        margin-left: 0;
+        height: 160px;
+    }
+    .section5 .gridBox ul li .title{
+        margin-top: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .section5 .gridBox ul li .content{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #7B7B7B;
+        text-align: center;
+        width: 90%;
+    }
+    /***** SECTION 5 *****/
+
+
+    /***** SECTION 6 *****/
+
+    .section6{
+        padding: 35px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section6 .positionBox{
+        margin: 20px 0;
+        border: solid 2px #5B8DEF;
+        border-radius: 20px;
+        width: 100%;
+        padding: 40px 0;
+    }
+    .section6 .positionBox .title{
+        font-size: 18px;
+    }
+    .section6 .positionBox .subTitle{
+        margin-top: 16px;
+        font-size: 14px;
+    }
+    .section6 .positionBox button{
+        color: #fff;
+        font-size: 14px;
+        padding: 0px;
+        height: 40px;
+        width: 200px;
+        background-color: #5B8DEF;
+    }
+    .section6 .positionBox:nth-child(2){
+        border: solid 2px #22D800;
+    }
+    .section6 .positionBox:nth-child(2) .title{
+        color: #22D800;
+    }
+    .section6 .positionBox:nth-child(2) button{
+        background-color: #22D800;
+    }
+    .section6 .positionBox:last-child{
+        border: solid 2px #34464B;
+    }
+    .section6 .positionBox:last-child .title{
+        color: #34464B;
+    }
+    .section6 .positionBox:last-child button{
+        background-color: #34464B;
+    }
+    /***** SECTION 6 *****/
+}
+
+@media (max-width: 400px) {
+    .section1 .positionBox img{
+        height: 100px;
+    }
+    .section2 .positionBox .buttonGroup button{
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 0.6em 0;
+        width: 130px;
+        margin: 0 10px;
+    }
+}
