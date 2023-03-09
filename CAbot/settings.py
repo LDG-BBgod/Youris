@@ -144,9 +144,8 @@ pymysql.install_as_MySQLdb()
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '*',
-    'cabot.co.kr',
-    'www.cabot.co.kr',
+    'gabot.co.kr',
+    'www.gabot.co.kr',
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

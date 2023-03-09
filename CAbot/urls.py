@@ -5,7 +5,8 @@ from home import views as homeViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homeViews.HomeView),
+    path('', homeViews.SHomeView),
+    path('serviceHome/', homeViews.HomeView),
     path('consulting/', homeViews.ConsultingView.as_view()),
     path('consulting/consultingdata/', homeViews.ConsultingDataView),
     path('selfCompareHome/', homeViews.SelfCompareHomeView),

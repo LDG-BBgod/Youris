@@ -208,10 +208,12 @@ footer .inner{
     padding-top: 20px;
 }
 footer .left-side{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer .left-side p{
-    margin-top: 8px;
+    margin-top: 10px;
     color: #ccc;
     font-size: 12px;
 }

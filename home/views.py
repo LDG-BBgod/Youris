@@ -29,6 +29,10 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from datetime import date, timedelta
 
+def SHomeView(request):
+
+    return render(request, 'homeMain.html')
+
 def HomeView(request):
 
     def get_client_ip(request):

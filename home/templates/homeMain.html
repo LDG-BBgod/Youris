@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
     {% load static %}
+    {% load humanize %}
     <script>
 
     </script>
@@ -9,16 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}?ver=1.4">
+    <link rel="stylesheet" href="{% static 'css/homeMain.css' %}?ver=1.4">
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer src="{% static 'js/main.js' %}?ver=1.4"></script>
+    <script defer src="{% static 'js/homeMain.js' %}?ver=1.4"></script>
+
 
     {% block header %}
     {% endblock %}
     
-    <title>CAbot</title>
+    <title>CABO</title>
 </head>
 
 <body>
@@ -28,14 +30,10 @@
         <header>
             <div class="inner clearfix">
                 <div class="logo float-left">
-                    <a class="logo-name" href="/">다이렉트</a>
-                    <a class="" href="/"><img src="../../static/img/logo.svg" alt="logo"></a>
+                    <a class="logo-name" href="/">CABO</a>
+                    <a class="" href="/"><img src="../../static/img/logo.svg" alt="logo" style="display: none;"></a>
                 </div>
-                <ul class="menu float-left">
-                    {% if request.session.superUser %}
-                    <a class="menuContent" href="/caData" style="border: solid 2px #000; padding: 8px 20px; border-radius: 5px; color: #000;">방문데이터 확인</a>
-                    <a class="menuContent" href="/caLogout" style="border: solid 2px #5b8def; padding: 8px 20px; border-radius: 5px; color: #5b8def;">관리자 로그아웃</a>
-                    {% else %}
+                <ul class="menu float-left" style="display: none;">
                     <img class="menuBar hover" src="../../static/img/menu_bar.svg" alt="메뉴바" onclick="OpenMenu()">
                     <img class="menuX hover" src="../../static/img/menu_x.svg" alt="메뉴x" onclick="CloseMenu()">
                     <div class="menuGroup">
@@ -52,18 +50,54 @@
                             <div class="menuContent hover" onclick="OpenChat(); CountButton('chatCount')">실시간 채팅상담</div>
                         </div>
                     </div>
-                    {% endif %}
                 </ul>
                 <div class="addInfo float-right">
-                    <div>대표상담번호 044-715-7442</div>
+                    <a href="#HMsection2">About Us</a>
+                    <a href="#HMfooter">Contact Us</a>
                 </div>
             </div>
         </header>
         <div class="middle">
-            {% block contents %}
-            {% endblock %}
+            <section class="section1">
+                <div class="positionBox">
+                    <div class="title">다이렉트 자동차보험<br>CABO에서 쉽고 편하게</div>
+                    <a href="/serviceHome/" class="button hover" target="_blank">시제품 소개</a>
+                    <img src="../../static/img/homeMain_s1.svg" alt="">
+                </div>
+            </section>
+            <section class="section2" id="HMsection2">
+                <div class="positionBox">
+                    <ul>
+                        <li>
+                            <img src="../../static/img/homeMain_s2.svg" alt="">
+                        </li>
+                        <li>
+                            <div class="title">About YOURIS</div>
+                            <div class="content">2022 핀테크 지원센터 예창패 선정</div>
+                            <div class="content">보험중개 특허출원</div>
+                            <div class="content">2023년 주식회사 카보 설립</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="positionBox">
+                    <ul>
+                        <li>
+                            <div class="title">유리스는 다이렉트 자동차보험<br>중개시장을 스마트한 변화를 지향합니다</div>
+                            <div class="content">현재 핀테크 지원센터를 통해 관련 아이템의<br>
+                                법적 당위성을 확보하려 하고있습니다.<br>
+                                보험사와의 제휴계약 또한 준비중 입니다. <br>
+                                시제품으로 카보의 지향성을 확인해보세요.</div>
+                        </li>
+                        <li>
+                            <img src="../../static/img/homeMain_s3.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        <footer>
+        <footer id="HMfooter">
             <div class="inner">
                 <div class="left-side">
                     <p>대표 : 이동진</p>
