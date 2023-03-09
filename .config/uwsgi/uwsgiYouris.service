@@ -3,7 +3,7 @@ Description=uWSGI service
 After=syslog.target
 
 [Service]
-ExecStart=/home/ubuntu/CAbot/venv/bin/uwsgi -i /home/ubuntu/Youris/CAbot/.config/uwsgi/youris.ini
+ExecStart=/home/ubuntu/CAbot/venv/bin/uwsgi -i /home/ubuntu/Youris/Youris/.config/uwsgi/youris.ini
 
 Restart=always
 KillSignal=SIGQUIT
