@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}?ver=3">
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection()">확인</button>
+</div>
+<form method="post" autocomplete="off">
+    {% csrf_token %}
+    <section class="section1">
+        <div class="title">관리자 페이지 로그인</div>
+        <div class="input-box">
+            <div class="text1">아이디</div>
+            <input type="text" name="userid" autocomplete="off">
+        </div>
+        <div class="input-box">
+            <div class="text1">비밀번호</div>
+            <input type="password" name="userpw" autocomplete="new-password">
+        </div>
+        <div class="error">{{ error }}</div>
+        <button>로그인</button>
+    </section>
+</form>
+{% endblock %}

@@ -1,0 +1,538 @@
+.section1{
+  background-color: #032bc9;
+}
+.section1 .gridBox{
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  padding: 150px 0;
+}
+.section1 .gridBox .grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .gridBox .grid1 img{
+  width: 300px;
+  height: 236px;
+}
+.section1 .gridBox .grid2 .text1{
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 52px;
+}
+
+
+.section2{
+
+}
+.section2 .gridBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 0;
+}
+.section2 .gridBox .grid1{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section2 .gridBox .grid1 .text1{
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #5b8def;
+  margin-bottom: 10px;
+}
+.section2 .gridBox .grid1 .text2:nth-child(3){
+  margin-top: 20px;
+}
+.section2 .gridBox .grid1 .text2{
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: bold;
+  color: #3F3D56;
+  margin-bottom: 10px;
+}
+.section2 .gridBox .grid1 .buttonBox{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.section2 .gridBox .grid1 .buttonBox button{
+  border: none;
+  border-radius: 15px;
+  width: 400px;
+  height: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px 5px #dfdfdf;
+}
+.section2 .gridBox .grid1 .buttonBox button:hover{
+  box-shadow: 2px 3px 10px 5px #d1d1d1;
+}
+.section2 .gridBox .grid1 .buttonBox .button1{
+  background-color: #03C988;
+}
+.section2 .gridBox .grid1 .buttonBox .button2{
+  margin-top: 20px;
+  background-color: #5b8def;
+}
+.section2 .gridBox .grid2 {
+  margin-left: 200px;
+}
+.section2 .gridBox .grid2 img{
+  width: 300px;
+}
+
+
+.section3{
+  background-color: #FBFAF9;
+}
+.section3 .flexBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.section3 .flexBox .text1{
+  font-size: 30px;
+  font-weight: bold;
+  color: #3F3D56;
+}
+.section3 .flexBox .text1 span{
+  font-size: 45px;
+  color: #5b8def;
+}
+.section3 .flexBox img{
+  height: 200px;
+  margin: 100px 0;
+}
+.section3 .flexBox .text2{
+  font-size: 22px;
+  font-weight: bold;
+  color: #3F3D56;
+}
+.section3 .flexBox .text2 span{
+  font-size: 30px;
+  color: #5b8def;
+}
+.section3 .flexBox .text1:nth-child(2){
+  margin-top: 20px;
+}
+.section3 .flexBox .text2:nth-child(5){
+  margin-top: 60px;
+}
+.section3 .flexBox .text2:nth-child(6){
+  margin-top: 20px;
+}
+
+
+
+.section4{
+
+}
+.section4 .flexBox{
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section4 .flexBox .text1{
+  font-size: 35px;
+  font-weight: bold;
+  color: #5b8def;
+  line-height: 55px;
+}
+.section4 .flexBox .spacer{
+  margin-top: -150px;
+}
+.section4 .flexBox .gridBox{
+  width: 100%;
+  display: grid;
+  margin-top: 350px;
+  grid-template-columns: 1fr 1fr;
+}
+.section4 .flexBox .gridBox.gridBox1{
+
+}
+.section4 .flexBox .gridBox.gridBox.gridBox2{
+
+}
+.section4 .flexBox .gridBox img{
+  height: 250px;
+  width: auto;
+}
+.section4 .flexBox .gridBox .text1{
+  font-size: 30px;
+  font-weight: bold;
+  color: #5b8def;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.section4 .flexBox .gridBox .text2{
+  font-size: 18px;
+  font-weight: bold;
+  color: #3F3D56;
+  line-height: 40px;
+  text-align: center;
+}
+.section4 .flexBox .rightText{
+  text-align: right;
+}
+.section4 .flexBox .gridImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section4 .flexBox .text3{
+  margin-top: 250px;
+  margin-bottom: 70px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #3F3D56;
+}
+.section4 .flexBox .buttonBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.section4 .flexBox .buttonBox button{
+  border: none;
+  border-radius: 15px;
+  width: 400px;
+  height: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 30px;
+  box-shadow: 2px 3px 10px 5px #dfdfdf;
+}
+.section4 .flexBox .buttonBox button:hover{
+  box-shadow: 2px 3px 10px 5px #d1d1d1;
+}
+.section4 .flexBox .buttonBox .button1{
+  background-color: #03C988;
+}
+.section4 .flexBox .buttonBox .button2{
+  background-color: #5b8def;
+}
+
+
+.section5{
+  background-color: #FBFAF9;
+}
+.section5 .flexBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+.section5 .flexBox .text1{
+  font-size: 35px;
+  font-weight: bold;
+  color: #5b8def;
+  line-height: 50px;
+}
+.section5 .spacer{
+  margin-top: 20px;
+}
+.section5 .flexBox button{
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  background-color: #5E5E5E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .section1{
+
+  }
+  .section1 .gridBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 80px 15px;
+  }
+  .section1 .gridBox .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section1 .gridBox .grid1 img{
+    height: 80px;
+  }
+  .section1 .gridBox .grid2 .text1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+  }
+  
+  
+  .section2{
+  
+  }
+  .section2 .gridBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 15px;
+  }
+  .section2 .gridBox .grid1{
+  
+  }
+  .section2 .gridBox .grid1 .text1{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #5b8def;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .section2 .gridBox .grid1 .text2:nth-child(3){
+    margin-top: 20px;
+  }
+  .section2 .gridBox .grid1 .text2{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #3F3D56;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .section2 .gridBox .grid1 .buttonBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .section2 .gridBox .grid1 .buttonBox button{
+    border: none;
+    border-radius: 10px;
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  .section2 .gridBox .grid1 .buttonBox .button1{
+    background-color: #03C988;
+  }
+  .section2 .gridBox .grid1 .buttonBox .button2{
+    margin-top: 15px;
+    background-color: #5b8def;
+  }
+  .section2 .gridBox .grid2 {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .section2 .gridBox .grid2 img{
+    width: 200px;
+  }
+  
+  
+  .section3{
+    background-color: #FBFAF9;
+  }
+  .section3 .flexBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 15px;
+  }
+  .section3 .flexBox .text1{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #3F3D56;
+    text-align: center;
+  }
+  .section3 .flexBox .text1 span{
+    font-size: 22px;
+    color: #5b8def;
+    text-align: center;
+  }
+  .section3 .flexBox img{
+    height: 100px;
+    margin: 70px 0;
+  }
+  .section3 .flexBox .text2{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #3F3D56;
+    text-align: center;
+  }
+  .section3 .flexBox .text2 span{
+    font-size: 20px;
+    color: #5b8def;
+  }
+  .section3 .flexBox .text1:nth-child(2){
+    margin-top: 10px;
+  }
+  .section3 .flexBox .text2:nth-child(5){
+    margin-top: 20px;
+  }
+  .section3 .flexBox .text2:nth-child(6){
+    margin-top: 25px;
+  }
+  
+  
+  .section4{
+  
+  }
+  .section4 .flexBox{
+    padding: 70px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section4 .flexBox .text1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b8def;
+    line-height: 35px;
+    text-align: center;
+  }
+  .section4 .flexBox .spacer{
+    margin-top: 0;
+  }
+  .section4 .flexBox .gridBox{
+    width: 100%;
+    display: grid;
+    margin-top: 120px;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .section4 .flexBox .gridBox .grid1,  
+  .section4 .flexBox .gridBox .grid2{
+    order: 2;
+  }
+  .section4 .flexBox .gridBox .gridImg{
+    order: 1;
+  }
+  .section4 .flexBox .gridBox.gridBox1{
+  
+  }
+  .section4 .flexBox .gridBox.gridBox.gridBox2{
+  
+  }
+  .section4 .flexBox .gridBox img{
+    height: 150px;
+    max-width: 260px;
+  }
+  .section4 .flexBox .gridBox .text1{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #5b8def;
+    margin-bottom: 30px;
+  }
+  .section4 .flexBox .gridBox .text2{
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F3D56;
+    line-height: 30px;
+    text-align: center;
+  }
+  .section4 .flexBox .gridImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section4 .flexBox .text3{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #3F3D56;
+  }
+  .section4 .flexBox .buttonBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .section4 .flexBox .buttonBox button{
+    border: none;
+    border-radius: 10px;
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  .section4 .flexBox .buttonBox .button1{
+    background-color: #03C988;
+  }
+  .section4 .flexBox .buttonBox .button2{
+    margin-top: 15px;
+    background-color: #5b8def;
+  }
+  
+  
+  .section5{
+    background-color: #FBFAF9;
+  }
+  .section5 .flexBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 15px;
+  }
+  .section5 .flexBox .text1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #5b8def;
+    line-height: 35px;
+    text-align: center;
+  }
+  .section5 .spacer{
+    margin-top: 10px;
+  }
+  .section5 .flexBox button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 260px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5E5E5E;
+  }
+}

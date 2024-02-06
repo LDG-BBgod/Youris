@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="그룹_28" data-name="그룹 28" transform="translate(-713 -723)">
+    <g id="사각형_60" data-name="사각형 60" transform="translate(713 723)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="24" height="24" rx="5" stroke="none"/>
+      <rect x="1" y="1" width="22" height="22" rx="4" fill="none"/>
+    </g>
+    <path id="checkmark3" d="M18.238,7.537,16.978,6.276a.594.594,0,0,0-.841,0L8.579,13.835l-3.6-3.621a.594.594,0,0,0-.841,0L2.882,11.474a.594.594,0,0,0,0,.841l5.272,5.307a.594.594,0,0,0,.841,0l9.244-9.244A.594.594,0,0,0,18.238,7.537Z" transform="translate(714.44 723.051)" fill="#fff"/>
+  </g>
+</svg>

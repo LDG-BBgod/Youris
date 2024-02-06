@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/caHome.css' %}?ver=3">
+<script defer src="{% static 'js/caHome.js' %}?ver=3"></script>
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection()">확인</button>
+</div>
+    <div class="section1">
+        {% for chatRoomName in chatRoomNames %}
+        <a href="/caHome/{{ chatRoomName.userIP }}" target="_blank">유저 : {{ chatRoomName.userIP }} 시간 : {{ chatRoomName.registerDate|date:'Y-m-d H:i:s'}} <span class="span_{{ chatRoomName.userIP }}"></span></a>
+        <div class="registerDate {{ chatRoomName.userIP }}" style="display: none;">{{ chatRoomName.registerDate|date:'Y-m-d H:i:s'}}</div>
+        {% endfor %}
+    </div>
+{% endblock %}

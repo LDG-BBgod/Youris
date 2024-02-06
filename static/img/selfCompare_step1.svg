@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320.5" height="85.559" viewBox="0 0 1320.5 85.559">
+  <g id="그룹_388" data-name="그룹 388" transform="translate(-299.5 -246.588)">
+    <path id="합치기_1" data-name="합치기 1" d="M0,85.559V0H218V85.559ZM218,35.39l10,7.389-10,7.391Z" transform="translate(299.5 246.588)" fill="#5b8def"/>
+    <g id="패스_946" data-name="패스 946" transform="translate(570 246.588)" fill="#fff">
+      <path d="M 226.5 84.05706787109375 L 1.5 84.05706787109375 L 1.5 1.500008344650269 L 226.5 1.500008344650269 L 226.5 84.05706787109375 Z" stroke="none"/>
+      <path d="M 3 3.000007629394531 L 3 82.55706787109375 L 225 82.55706787109375 L 225 3.000007629394531 L 3 3.000007629394531 M 0 7.62939453125e-06 L 228 7.62939453125e-06 L 228 85.55706787109375 L 0 85.55706787109375 L 0 7.62939453125e-06 Z" stroke="none" fill="#ccc"/>
+    </g>
+    <g id="사각형_656" data-name="사각형 656" transform="translate(846 246.588)" fill="#fff" stroke="#ccc" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <g id="사각형_657" data-name="사각형 657" transform="translate(1392 246.588)" fill="#fff" stroke="#ccc" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <g id="사각형_658" data-name="사각형 658" transform="translate(1119 246.588)" fill="#fff" stroke="#ccc" stroke-width="3">
+      <rect width="228" height="85.557" stroke="none"/>
+      <rect x="1.5" y="1.5" width="225" height="82.557" fill="none"/>
+    </g>
+    <text id="개인인증" transform="translate(343.498 302.367)" fill="#fff" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">개인인증</tspan></text>
+    <text id="자동차정보" transform="translate(609 302.367)" fill="#ccc" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">자동차정보</tspan></text>
+    <text id="가입정보" transform="translate(900 302.367)" fill="#ccc" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">가입정보</tspan></text>
+    <text id="추가특약" transform="translate(1173 302.367)" fill="#ccc" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">추가특약</tspan></text>
+    <text id="보험료비교" transform="translate(1431 302.367)" fill="#ccc" font-size="30" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="0" y="0">보험료비교</tspan></text>
+  </g>
+</svg>

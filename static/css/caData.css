@@ -1,0 +1,19 @@
+.section1{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.section1 ul{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.section1 ul li{
+    text-align: center;
+    margin-top: 20px;
+}
+.section1 span{
+    margin-left: 20px;
+}

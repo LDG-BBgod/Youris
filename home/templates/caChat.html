@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/caChat.css' %}?ver=3">
+<script>
+    const userIP = '{{ userIP }}'
+</script>
+<script defer src="{% static 'js/caChat.js' %}?ver=3"></script>
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection()">확인</button>
+</div>
+<setion class="sectionFix">
+    <div class="chatBox">
+        <div class="chatBoxHead">
+        </div>
+        <div class="chatBoxMiddle">
+            {% for chatLog in chatLogs %}
+            {% if chatLog.username == 'LDJ' %}
+            <div class="item myItem">
+                <div class="msgContainer myMsgContainer">
+                    <div class="msg myMsg">{{ chatLog.log }}</div>
+                </div>
+            </div>
+            {% else %}
+            <div class="item">
+                <div class="msgContainer">
+                    <div class="msg">{{ chatLog.log }}</div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="chatBoxFoot">
+            <textarea id="message" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+            <button id="sendButton">전송</button>
+        </div>
+    </div>
+</section>
+{% endblock %}

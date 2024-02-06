@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/selfCompareHome.css' %}?ver=12.07">
+<script defer src="{% static 'js/userChat.js' %}?ver=12.07"></script>
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection()">확인</button>
+</div>
+<section class="sectionFix" style="display: none;">
+    <div class="chatBox">
+        <div class="chatBoxHead">
+            <img class="hover" src="../../static/img/home_chatBack.svg" alt="뒤로가기" onclick="closeChat()">
+        </div>
+        <div class="chatBoxMiddle">
+            
+        </div>
+        <div class="chatBoxFoot">
+            <textarea id="message" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+            <button id="sendButton"><img src="../../static/img/sendButton.svg" alt=""></button>
+        </div>
+    </div>
+</section>
+<div class="inner">
+    <section class="section1">
+        <div class="title">고객님의 최적보험료 직접 확인해보세요!</div>
+        <div class="content">고객님의 개인정보는 오직 자동차보험료 조회 목적으로만 이용됩니다. <br class="rbr">다이렉트 카봇에서는 광고, 이익의 목적으로 고객님의 정보를 이용하지 않습니다. </div>
+        <a href="step/" class="button hover" onclick="sSaveLog('서비스페이지 보험료 스탭진입 버튼')">보험료 Self 확인<img src="../../static/img/button_arrow.svg" alt=""></a>
+    </section>
+    <section class="section2">
+        <div class="titleGroup">
+            <span class="title">개인용 자동차 보험비교</span>
+            <span class="titleSide">(갱신계약은 만기 30일 이내만 조회)</span>
+        </div>
+        <div class="content">귀하가 가입중인 자동차보험의 경우에는 만기도래 30일 이내 계약만 보험료 조회가 가능하며, 차량가액 등이 표준화되지 않은 일부차종<span>(병행수입 외제차, 15년 초과차량, LPG차량 등)</span>은 보험료 조회서비스 이용이 제한 될 수 있습니다.</div>
+    </section>
+    <section class="section3">
+        <div class="title">확인사항</div>
+        <div class="subTitle">보험상품 비교전에 반드시 확인해 주세요.</div>
+        <div class="contentGroup">
+            <div class="dash">-</div>
+            <div class="content"><span>조회된 보험료는 회사별 보험료 수준을 비교하기 위한 것으로, 표준화된 가입조건을 통해 산출한 보험료이며 소비자가 보험회사를 통해 산출한 개인별 실제 보험료와는 차이가 발생할수 있습니다.</span></div>
+        </div>
+        <div class="contentGroup">
+            <div class="dash">-</div>
+            <div class="content"><span>다수의 보험회사에서 판매하는 보험료 추가 할인 특약을 지속 확대하여 반영하고 있습니다. (다만, 일부사에서만 판매하는 보험료 할인 특약은 반영되지 않을 수 있습니다.)</span></div>
+        </div>
+        <div class="contentGroup">
+            <div class="dash">-</div>
+            <div class="content">보험료 조회와는 별개로, 실제 보험가입시 과거 3년간의 사고유무 및 회사별 인수정책에 따라 보험가입이 일부 제한될 수 있습니다.</div>
+        </div>
+        <div class="contentGroup">
+            <div class="dash">-</div>
+            <div class="content">보험료 산출 비교를 위한 사고 및 계약내용은 3개월 이전 기준으로 적용되며, 최근 변경된 사고 및 계약정보는 일부 미반영 되었으니 참고하시기 바랍니다.</div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,256 @@
+.section {
+    padding-top: 80px;
+    background: #e8e8e8;
+}
+.section .inner{
+    max-width: 1200px;
+    padding: 0 20px;
+    background: #fff;
+    min-height: 100vh;
+}
+.section h1{
+    padding-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+.section ul{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.section ul li{
+    margin-top: 20px;
+    height: 50px;
+    width: 118px;
+    border: 1px solid rgb(155, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section ul li .logo1{
+    background: url(../img/CLogo1.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section ul li .d-logo1{
+    background: url(../img/D1meritz.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo2{
+    background: url(../img/D2hyundai.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo3{
+    background: url(../img/D3db.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo4{
+    background: url(../img/D4samsung.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo5{
+    background: url(../img/D5kb.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo6{
+    background: url(../img/D6hanwha.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo7{
+    background: url(../img/D7heungkuk.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo8{
+    background: url(../img/D8lotte.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo9{
+    background: url(../img/D9aig.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo10{
+    background: url(../img/D10mg.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo11{
+    background: url(../img/D11nh.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .d-logo12{
+    background: url(../img/D12hana.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo1{
+    background: url(../img/L1metlife.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo2{
+    background: url(../img/L2tongyang.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo3{
+    background: url(../img/L3samsung.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo4{
+    background: url(../img/L4kyobo.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo5{
+    background: url(../img/L5nh.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo6{
+    background: url(../img/L6db.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo7{
+    background: url(../img/L7hanwha.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo8{
+    background: url(../img/L8shinhan.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo9{
+    background: url(../img/L9lina.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo10{
+    background: url(../img/L10kb.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo11{
+    background: url(../img/L11mirae.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo12{
+    background: url(../img/L12kdb.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo13{
+    background: url(../img/L13abl.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo14{
+    background: url(../img/L14heungkuk.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo15{
+    background: url(../img/L15chubb.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo16{
+    background: url(../img/L16cardif.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo17{
+    background: url(../img/L17prudential.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo18{
+    background: url(../img/L18dgb.gif) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo19{
+    background: url(../img/L19hyandai.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+.section ul li .l-logo20{
+    background: url(../img/L20ibk.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .section ul{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .section ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

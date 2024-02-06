@@ -1,0 +1,2463 @@
+/***** COMMON *****/
+.inner{
+    max-width: 1000px;
+}
+.step5wait{
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    top: calc(50% + 70px);
+    left: 50%;
+    background-color: #fff;
+    width: 300px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 25px;
+    margin: auto;
+    font-weight: bold;
+    background-color: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+}
+.stepInner{
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position:  relative;
+}
+.radio,
+.childRadio{
+    height: 24px;
+    width: 24px;
+    background: url(../img/disagree.svg) no-repeat;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.radio:checked,
+.childRadio:checked{
+    background: url(../img/agree.svg) no-repeat;
+}
+.inputText{
+    border: solid 1px #919191;
+    width: 100%;
+    margin: 0 10px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+select{
+    border: solid 1px #919191;
+    padding-left: 8px;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+	color: rgba(0, 0, 0, 0);
+	opacity: 1;
+	display: block;
+	background: url(../img/calendar.svg)
+		center/80% no-repeat white;
+	width: 20px;
+	height: 20px;
+	border-width: thin;
+	cursor: pointer;
+}
+.noneDate::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+/***** COMMON *****/
+
+
+/***** chatConsult *****/
+.chatConsult{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 8000;
+}
+.chatConsult button{
+    width: 150px;
+    height: 50px;
+    background: #5b8def;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+/***** chatConsult *****/
+
+
+/***** STEP *****/
+
+.step{
+    padding-top: 80px;
+}
+.step .section1{
+    margin-top: 50px;
+}
+.step .section1 .titleGroup{
+    padding-bottom: 15px;
+    border-bottom: solid 3px #707070;
+}
+.step .section1 .titleGroup .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: #5b8def;
+}
+.step .section1 .titleGroup .titleSide{
+    margin-left: 8px;
+    font-size: 16px;
+    color: #FF0000;
+}
+.step .section1 img{
+    width: 1000px;
+    margin-top: 30px;
+}
+.step .section1 .currentStep{
+    display: none;
+}
+
+/***** STEP *****/
+
+
+/***** 스탭1 *****/
+
+.step1 .section2{
+ margin-top: 80px;
+}
+.step1 .section2 .titleGroup{
+
+}
+.step1 .section2 .titleGroup .title{
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5b8def;
+}
+.step1 .section2 .titleGroup button{
+    color: #fff;
+    background: #5b8def;
+    font-size: 20px;
+    height: 50px;
+}
+.step1 .section2 .contentGroup{
+    margin-top: 15px;
+    padding: 40px 0;
+    border-top: solid 3px #707070;
+    border-bottom: solid 2px #707070;
+}
+.step1 .section2 .contentGroup .content{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.step1 .section2 .contentGroup .content:first-child{
+    margin-top: 0;
+}
+.step1 .section2 .contentGroup .content a{
+    margin-right: auto;
+    font-size: 16px;
+    color: #000;
+}
+.step1 .section2 .contentGroup .content .authGroup{
+    display: flex;
+    align-items: center;
+}
+.step1 .section2 .contentGroup .content .authGroup input{
+    margin-left: 20px;
+    background-size: 20px 20px;
+
+}
+.step1 .section2 .contentGroup .content .authGroup label{
+    margin-left: 5px;
+    font-size: 16px;
+    color: #919191;
+}
+.step1 .section2 .contentSide{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+
+.step1 .section3{
+    margin-top: 80px;
+}
+.step1 .section3 .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: #5b8def;
+}
+.step1 .section3 .titleGroup button{
+    display: none;
+}
+.step1 .section3 .contentGroup{
+    margin-top: 15px;
+    padding: 40px 0;
+    border-top: solid 3px #707070;
+    border-bottom: solid 2px #707070;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+}
+.step1 .section3 .contentGroup .leftSide{
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.step1 .section3 .contentGroup .leftSide button{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    background: #5b8def;
+}
+.step1 .section3 .contentGroup .leftSide .content{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.step1 .section3 .contentGroup .leftSide .content input{
+    margin-top: 6px;
+    background-size: 20px 20px;
+}
+.step1 .section3 .contentGroup .leftSide .content label{
+    margin-left: 8px;
+    margin-right: auto;
+}
+.step1 .section3 .contentGroup .leftSide .content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    color: #919191;
+    border: solid 1px #919191;
+}
+.step1 .section3 .contentGroup .rightSide{
+    margin-left: 40px;
+}
+.step1 .section3 .contentGroup .rightSide ul{
+    height: 373px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+}
+.step1 .section3 .contentGroup .rightSide li{
+    border-bottom: solid 1px #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step1 .section3 .contentGroup .rightSide li:nth-child(odd){
+    border-right: solid 1px #CCCCCC;
+    background: #D7E9FD;
+}
+.step1 .section3 .contentGroup .rightSide li:first-child,
+.step1 .section3 .contentGroup .rightSide li:nth-child(2){
+    border-top: solid 1px #CCCCCC;
+}
+.step1 .section3 .contentGroup .rightSide ul li .subTitle{
+    font-size: 16px;
+}
+.step1 .section3 .contentGroup .rightSide ul li .listUL{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.step1 .section3 .contentGroup .rightSide ul li .listLI{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.step1 .section3 .contentGroup .rightSide ul li .listLI label{
+    margin-left: 6px;
+    font-size: 14px;
+}
+.step1 .section3 .phoneSubmit{
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 0;
+    font-size: 25px;
+    color: #fff;
+    background: #5b8def;
+    width: 155px;
+    height: 55px;
+}
+
+
+.step1 .section4{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.step1 .section4 .stepInner{
+    height: 120px;
+    background: #D7E9FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step1 .section4 .title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.step1 .section4 input{
+    margin-left: 20px;
+    margin-right: 50px;
+    width: 200px;
+}
+.step1 .section4 button{
+    margin: 0 10px;
+}
+.step1 .section4 button:nth-child(3){
+    color: #fff;
+    background: #5b8def;
+    border-radius: 3px;
+}
+.step1 .section4 button:nth-child(4){
+    color: #5b8def;
+    background: #fff;
+    border-radius: 3px;
+}
+.step1 .section4 .error{
+    position: absolute;
+    top: 82px;
+    left: 360px;
+    font-size: 12px;
+    color: #FF0000;
+}
+/***** 스탭1 *****/
+
+
+/***** 스탭2 *****/
+.step2 .sectMenu{
+    display: none;
+}
+.step2 .section2{
+    margin-top: 130px;
+    margin-bottom: 120px;
+}
+.step2 .section2 ul{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.step2 .section2 ul li{
+    box-sizing: border-box;
+    border: solid 1px #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+.step2 .section2 ul li:first-child{
+    margin-right: 40px;
+}
+.step2 .section2 ul li.on{
+    border-top: solid 5px #5b8def;
+}
+.step2 .section2 ul li:last-child{
+    margin-left: 40px;
+}
+.step2 .section2 ul li img{
+    margin-top: 50px;
+}
+.step2 .section2 ul li .title{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.step2 .section2 ul li .contentGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.step2 .section2 ul li .contentGroup .content{
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.step2 .section2 ul li .contentGroup .content span{
+    color: #5b8def;
+}
+.step2 .section2 ul li .contentGroup .contentBox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.step2 .section2 ul li .contentGroup .contentBox .text1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+.step2 .section2 ul li .contentGroup .contentBox input{
+    box-sizing: border-box;
+    width: 190px;
+    height: 40px;
+    padding: 0 8px 0 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.step2 .section2 ul li .contentGroup .text2{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #919191;
+}
+.step2 .section2 ul li .contentGroup button.button1{
+    width: 250px;
+}
+.step2 .section2 ul li .contentGroup button{
+    margin-top: 20px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    background: #5b8def;
+    width: 330px;
+    height: 55px;
+}
+.step2 .sect2_3{
+    margin-top: 100px;
+}
+.step2 .sect2_3 .gridul{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1.6fr 1fr;
+    border-bottom: solid 1px #C5C5C5;
+}
+.step2 .sect2_3 .gridul.gridHead{
+    background-color: #5b8def;
+    border-top: solid 2px #3B3B3B;
+    border-bottom: solid 2px #3B3B3B;
+}
+.step2 .sect2_3 .gridul:last-child{
+    border-bottom: solid 2px #3B3B3B;
+}
+.step2 .sect2_3 .gridli{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 1px #C5C5C5;
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+}
+.step2 .sect2_3 .gridul.gridHead .gridli{
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-weight: bold;
+
+}
+.step2 .sect2_3 .gridul .gridli:last-child{
+    border-right: none;
+}
+.step2 .sect2_3 .gridli button{
+    padding: 0;
+    height: 32px;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #22D800;
+}
+
+
+.step2 .section3{
+    margin-top: 80px;
+}
+.step2 .section3 .stepInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step2 .section3 .subTitle{
+    color: #919191;
+}
+.step2 .section3 .contentGroup{
+    width: 100%;
+    margin-top: 40px;
+}
+.step2 .section3 .contentGroup .content{
+    width: 100%;
+}
+.step2 .section3 .contentGroup .content .title{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    color: #5E5E5E;
+    background: #F4F4F4;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-left: 20px;
+    border-top: solid 1px #CCCCCC;
+    border-bottom: solid 1px #CCCCCC;
+}
+.step2 .section3 .contentGroup .content ul{
+    width: 1000px;
+    max-height: 350px;
+    overflow: auto;
+}
+.step2 .section3 .contentGroup .content ul li{
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 100%;
+    height: 70px;
+    border-bottom: solid 1px #CCCCCC;
+    display: flex;
+    align-items: center;
+}
+.step2 .section3 .contentGroup .content ul li:last-child{
+    border-bottom: none;
+}
+.step2 .section3 .contentGroup .content ul li .box{
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: solid 2px #919191;
+    border-radius: 5px;
+}
+.step2 .section3 .contentGroup .content ul li .text1{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5E5E5E;
+}
+
+
+.step2 .section4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step2 .section4 .contentGroup{
+    width: 650px;
+    margin-top: 80px;
+    padding: 20px;
+    border: solid 1px #707070;
+    border-top: solid 6px #5b8def;
+}
+.step2 .section4 .contentGroup ul{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.step2 .section4 .contentGroup li{
+    line-height: 20px;
+    word-break: break-all;
+    display: inline;
+    width: 500px;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+.step2 .section4 .contentGroup li:nth-child(odd){
+    width: 100px;
+    font-size: 20px;
+    color: #5b8def;
+    font-weight: 600;
+}
+.step2 .section4 button{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 0;
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background: #5b8def;
+    border-radius: 15px;
+}
+/***** 스탭2 *****/
+
+
+/***** 스탭3 *****/
+.step34{
+
+}
+.step34 .section2{
+
+}
+.step34 .section2 .title{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #353535;
+}
+.step34 .section2 .subTitle{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 520;
+    color: #919191;
+}
+.step34 .section2 .contentGroup{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+}
+.step34 .section2 .contentGroup .contentBox1{
+    position: relative;
+    box-sizing: border-box;
+    margin-right: 5px;
+    height: 550px;
+    border: solid 1px #CCCCCC;
+    border-top: solid 4px #5b8def;
+    padding: 0 10px;
+}
+.step34 .section2 .contentGroup .contentBox1 .sortName{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #5b8def;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #a1a1a1;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection{
+
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .contentHead{
+    grid-column-gap: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .contentHead button{
+    box-shadow: 2px 2px 5px rgb(216, 216, 216);
+    box-sizing: border-box;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    color: #fff;
+    background-color: #CCCCCC;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .contentHead button.select{
+    background-color: #5b8def;
+}
+
+.step34 .section2 .contentGroup .contentBox1 .contentSection ul{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection li{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection li input{
+    margin: 0;
+    width: 24px;
+    height: 24px;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection li label{
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection li label:hover{
+    cursor: pointer;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .inputBox{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .inputBox .text1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .inputBox input{
+    margin-left: 10px;
+    width: 200px;
+    height: 35px;
+    padding-left: 8px;
+    color: #353535;
+    border: solid 1px #919191;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.step34 .section2 .contentGroup .contentBox1 .contentSection .error{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+    color: #FF0000;
+}
+.step34 .section2 .contentGroup .contentBox1 .describtionGroup{
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.step34 .section2 .contentGroup .contentBox1 .describtion1{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #EAF4FF;
+    font-size: 14px;
+    line-height: 25px;
+}
+.step34 .section2 .contentGroup .contentBox1 .describtion2{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #E2E2E2;
+    font-size: 14px;
+    line-height: 25px;
+}
+.step34 .section2 .contentGroup .contentBox1 .buttonGroup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.step34 .section2 .contentGroup .contentBox1 .buttonGroup button{
+    margin: 20px;
+    width: 120px;
+    height: 35px;
+    background-color: #5E5E5E;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.step34 .section2 .contentGroup .contentBox2{
+    margin-left: 5px;
+}
+.step34 .section2 .contentGroup .contentBox2 ul{
+    display: grid;
+    grid-template-columns: 160px 1fr;
+}
+.step34 .section2 .contentGroup .contentBox2 li{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 55px;
+    border-bottom: solid 1px #CCCCCC;
+}
+.step34 .section2 .contentGroup .contentBox2 li:nth-child(1){
+    border-top: solid 1px #CCCCCC;
+}
+.step34 .section2 .contentGroup .contentBox2 li:nth-child(2){
+    border-top: solid 1px #CCCCCC;
+}
+.step34 .section2 .contentGroup .contentBox2 li:nth-child(odd){
+    background-color: #D7E9FD;
+}
+.step34 .section2 .contentGroup .contentBox2 li:nth-child(even){
+    border-left: solid 1px #CCCCCC;
+    cursor: pointer;
+}
+.step34 .section2 .contentGroup .contentBox2 li .sortName{
+    font-size: 15px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step34 .section2 .contentGroup .contentBox2 li div{
+    font-size: 14px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step34 .section2 .contentGroup .contentBox2 li:nth-child(2) .sortContent{
+    color: #5b8def;
+}
+.step34 .section2 .step3Submit,
+.step34 .section2 .step6Submit{
+    margin: 80px auto 80px auto;
+    padding: 0;
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background: #5b8def;
+    border-radius: 15px;
+}
+/***** 스탭3 *****/
+
+
+/***** 스탭4 *****/
+.step4 .section2 .contentGroup .contentBox1{
+    position: relative;
+    box-sizing: border-box;
+    margin-right: 5px;
+    height: 605px;
+    border: solid 1px #CCCCCC;
+    border-top: solid 4px #5b8def;
+    padding: 0 10px;
+}
+.step4 .section2 .contentGroup .contentBox2 ul{
+    grid-template-columns: 1fr 1fr;
+}
+.step4 .section2 .contentGroup .contentBox1 .text1{
+    margin-top: 30px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c1 select{
+    margin-top: 12px;
+    color: #5E5E5E;
+}
+.step4 .s4c2 .selectGroup{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 1fr;
+}
+.step4 .s4c2 .selectGroup div{
+    line-height: 30px;
+    color: #5E5E5E;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.step4 .s4c2 .inputGroup{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+
+}
+.step4 .s4c2 .inputGroup input{
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    height: 30px;
+    border: solid 1px #919191;
+    border-radius: 5px;
+    width: 150px;
+
+}
+.step4 .s4c2 .inputGroup div{
+    color: #5E5E5E;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.step4 .s4c3 select{
+    margin-top: 30px;
+}
+.step4 .s4c3 .inputGroup{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.step4 .s4c3 .inputGroup .subject{
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c3 .inputGroup input{
+    margin-left: 8px;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    height: 30px;
+    border: solid 1px #919191;
+    border-radius: 5px;
+    width: 200px;
+}
+.step4 .s4c4 .explainSection{
+    width: 100%;
+    margin-top: 30px;
+}
+.step4 .s4c4 .explainSection ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+.step4 .s4c4 .explainSection ul li{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #CCCCCC;
+}
+.step4 .s4c4 .explainSection ul li:nth-child(1),
+.step4 .s4c4 .explainSection ul li:nth-child(2){
+    border-top: solid 1px #CCCCCC;
+}
+.step4 .s4c4 .explainSection ul li:nth-child(odd){
+    background-color: #D7E9FD;
+}
+.step4 .s4c5 .subject{
+    margin-top: 30px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c5 .radioGroup{
+    margin-top: 15px;
+}
+.step4 .s4c5 .radioGroup .content{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.step4 .s4c5 .radioGroup .content input{
+    margin: 0;
+}
+.step4 .s4c5 .radioGroup .content label{
+    margin-left: 8px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c6 .inputGroup{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.step4 .s4c6 .inputGroup .subject{
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c6 .inputGroup input{
+    margin-left: 8px;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    height: 30px;
+    border: solid 1px #919191;
+    border-radius: 5px;
+    width: 200px;
+}
+.step4 .s4c6 .inputGroup span{
+    margin-left: 8px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c7 .subject{
+    margin-top: 30px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c7 .inputGroup{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.step4 .s4c7 .inputGroup input{
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    height: 30px;
+    border: solid 1px #919191;
+    border-radius: 5px;
+    width: 200px;
+}
+.step4 .s4c7 .inputGroup span{
+    margin-left: 8px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step4 .s4c7 .inputGroup a{
+    margin-left: 40px;
+    color: #5E5E5E;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 140px;
+    border: solid 1px #5e5e5e;
+}
+/***** 스탭4 *****/
+
+
+/***** 스탭5 *****/
+.step5 .section2{
+    margin: 50px 0;
+}
+.step5 .section2 .title{
+    padding-bottom: 15px;
+    border-bottom: solid 3px #707070;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5b8def;
+}
+.step5 .section2 .subTitle{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.step5 .section2 .contentGroup{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 15px 1fr;
+}
+.step5 .section2 .contentGroup:last-child{
+    padding-bottom: 20px;
+    border-bottom: solid 3px #707070;
+}
+.step5 .section2 .contentGroup .dash{
+    font-size: 14px;
+    font-weight: bold;
+}
+.step5 .section2 .contentGroup .content{
+    font-size: 14px;
+    line-height: 20px;
+}
+.step5 .section2 .contentGroup .content span{
+    color: #FF0000;
+}
+.step5 .section3{
+
+}
+.step5 .section3 .buttonGroup{
+    display: flex;
+    align-items: center;
+}
+.step5 .section3 .buttonGroup button{
+    padding: 0;
+    margin-right: 10px;
+    width: 230px;
+    height: 60px;
+    color: #fff;
+    background-color: #CCCCCC;
+    border-radius: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.step5 .section3 .buttonGroup button.active{
+    background-color: #5b8def;
+}
+.step5 .section3 .text{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+.step5 .section3 .text span{
+    color: #5b8def;
+}
+.step5 .section4{
+
+}
+.step5 .section4 .table{
+    margin-top: 10px;
+}
+.step5 .section4 .table ul{
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr 5fr;
+    border-bottom: solid 1px #919191;
+    height: 88px;
+    line-height: 88px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step5 .section4 .table ul li img{
+    width: 150px;
+}
+.step5 .section4 .table ul.lastUl{
+    border-top: solid 1px #919191;;
+    margin-top: 40px;
+}
+.step5 .section4 .table ul:first-child{
+    border-top: solid 1px #919191;
+    height: 66px;
+    line-height: 66px;
+    background-color: #D7E9FD;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+.step5 .section4 .table ul:first-child li div {
+    height: 33px;
+    line-height: 33px;
+}
+.step5 .section4 .table ul li{
+    border-left: solid 1px #919191;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.step5 .section4 .table ul li:first-child{
+    border-left: none;
+}
+.step5 .section4 .table ul li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.step5 .section4 .table ul li .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F26D00;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    width: 125px;
+    height: 35px;
+    border-radius: 18px;
+}
+
+
+.step5 .section5{
+    margin-top: 10px;
+}
+.step5 .section5 .text{
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF1C1C;
+    line-height: 19px;
+}
+.step5 .section6{
+    height: 100px;
+}
+/***** 스탭5 *****/
+
+
+/***** 스탭6 *****/
+.step6.step34 .section2 .contentGroup{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 550px 1fr;
+}
+.step6 .section2 .contentGroup .contentBox2 .contentBox2Title{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 ul{
+    display: grid;
+    grid-template-columns: 160px 1fr 1fr;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(1){
+    background-color: #5b8def !important;
+    border-top: solid 1px #CCCCCC;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(2){
+    background-color: #5b8def !important;
+    border-top: solid 1px #CCCCCC;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(3){
+    background-color: #5b8def !important;
+    border-top: solid 1px #CCCCCC;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(odd){
+    background-color: #fff;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(even){
+    border-left: none;
+    cursor: default;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(3n+1){
+    background-color: #D7E9FD;
+    border-right: solid 1px #CCCCCC;
+}
+.step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(3n+2){
+    border-right: solid 1px #CCCCCC;
+}
+/***** 스탭6 *****/
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    footer{
+        display: none;
+    }
+    /***** COMMON *****/
+    .stepInner{
+        max-width: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position:  relative;
+    }
+    .radio,
+    .childRadio{
+        height: 18px;
+        width: 18px;
+        background: url(../img/disagree.svg) no-repeat;
+        background-size: 18px 18px;
+        -webkit-appearance: none;
+        cursor: pointer;
+    }
+    .radio:checked,
+    .childRadio:checked{
+        height: 18px;
+        width: 18px;
+        background: url(../img/agree.svg) no-repeat;
+        background-size: 18px 18px;
+    }
+    .inputText{
+        border: solid 1px #919191;
+        width: 100%;
+        margin: 0 10px;
+        height: 30px;
+        border-radius: 5px;
+        padding-left: 8px;
+    }
+    select{
+        border: solid 1px #919191;
+        padding-left: 8px;
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        display: block;
+        background: url(../img/calendar.svg)
+            center/80% no-repeat white;
+        width: 20px;
+        height: 20px;
+        border-width: thin;
+        cursor: pointer;
+    }
+    .noneDate::-webkit-calendar-picker-indicator {
+        display: none !important;
+    }
+    /***** COMMON *****/
+
+
+    /***** chatConsult *****/
+    .chatConsult{
+        display: none;
+    }
+    /***** chatConsult *****/
+
+
+    /***** STEP *****/
+
+    .step{
+        padding-top: 60px;
+    }
+    .step .section1{
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    .step .section1 .titleGroup{
+        padding-bottom: 10px;
+        border-bottom: solid 2px #707070;
+    }
+    .step .section1 .titleGroup .title{
+        line-height: 25px;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5b8def;
+    }
+    .step .section1 .titleGroup .titleSide{
+        margin-left: 0;
+        font-size: 12px;
+        color: #FF0000;
+    }
+    .step .section1 img{
+        display: none;
+    }
+    .step .section1 .currentStep{
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    /***** STEP *****/
+
+
+    /***** 스탭1 *****/
+
+    .step1 .section2{
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+    .step1 .section2 .titleGroup{
+
+    }
+    .step1 .section2 .titleGroup .title{
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5b8def;
+    }
+    .step1 .section2 .titleGroup button{
+        padding: 0;
+        width: 100px;
+        height: 30px;
+        color: #fff;
+        background: #5b8def;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .step1 .section2 .contentGroup{
+        margin-top: 10px;
+        padding: 20px 0;
+        border-top: solid 3px #707070;
+        border-bottom: solid 2px #707070;
+    }
+    .step1 .section2 .contentGroup .content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 30px;
+    }
+    .step1 .section2 .contentGroup .content:first-child{
+        margin-top: 0;
+    }
+    .step1 .section2 .contentGroup .content a{
+        margin-right: auto;
+        font-size: 14px;
+        color: #000;
+    }
+    .step1 .section2 .contentGroup .content .authGroup{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .step1 .section2 .contentGroup .content .authGroup input{
+        margin-left: 0;
+        margin-right: 5px;
+        background-size: 18px 18px;
+    }
+    .step1 .section2 .contentGroup .content .authGroup label{
+        margin-top: 1px;
+        margin-left: 0;
+        margin-right: 20px;
+        font-size: 12px;
+        color: #919191;
+    }
+    .step1 .section2 .contentSide{
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FF0000;
+    }
+
+
+    .step1 .section3{
+        padding: 0 15px;
+        margin-top: 60px;
+    }
+    .step1 .section3 .title{
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5b8def;
+    }
+    .step1 .section3 .titleGroup button{
+        display: block;
+        width: 100px;
+        height: 30px;
+        background-color: #5b8def;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 0;
+    }
+    .step1 .section3 .contentGroup{
+        margin-top: 15px;
+        padding: 20px 0;
+        border-top: solid 2px #707070;
+        border-bottom: solid 2px #707070;
+        display: flex;
+        flex-direction: column;
+    }
+    .step1 .section3 .contentGroup .leftSide{
+        box-sizing: border-box;
+        padding-right: 0;
+    }
+    .step1 .section3 .contentGroup .leftSide button{
+        display: none;
+        font-size: 25px;
+        font-weight: bold;
+        width: 100%;
+        color: #fff;
+        background: #5b8def;
+    }
+    .step1 .section3 .contentGroup .leftSide .content{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .step1 .section3 .contentGroup .leftSide .content:nth-child(2){
+        margin-top: 0;
+    }
+    .step1 .section3 .contentGroup .leftSide .content input{
+        height: 18px;
+        width: 18px;
+        background-size: 18px 18px;
+    }
+    .step1 .section3 .contentGroup .leftSide .content label{
+        font-size: 12px;
+        margin-left: 6px;
+        line-height: 16px;
+        margin-right: auto;
+    }
+    .step1 .section3 .contentGroup .leftSide .content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        color: #919191;
+        border: none;
+        font-size: 10px;
+    }
+    .step1 .section3 .contentGroup .leftSide .content a::before{
+        content: "[";
+    }
+    .step1 .section3 .contentGroup .leftSide .content a::after{
+        content: "]";
+    }
+    .step1 .section3 .contentGroup .rightSide{
+        margin-top: 20px;
+        border-top: solid 2px #707070;
+        margin-left: 0;
+    }
+    .step1 .section3 .contentGroup .rightSide ul{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .step1 .section3 .contentGroup .rightSide li{
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .step1 .section3 .contentGroup .rightSide li:nth-child(odd){
+        margin-top: 30px;
+        margin-bottom: 10px;
+        justify-content: start;
+        font-size: 14px;
+        font-weight: bold;
+        border-right: none;
+        background: #fff;
+    }
+    .step1 .section3 .contentGroup .rightSide li:first-child,
+    .step1 .section3 .contentGroup .rightSide li:nth-child(2){
+        border-top: none;
+    }
+    .step1 .section3 .contentGroup .rightSide li input{
+        margin: 0;
+    }
+    .step1 .section3 .contentGroup .rightSide ul li .subTitle{
+        font-size: 18px;
+    }
+    .step1 .section3 .contentGroup .rightSide ul li .listUL{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .step1 .section3 .contentGroup .rightSide ul li .listLI{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 10px;
+    }
+    .step1 .section3 .contentGroup .rightSide ul li .listLI label{
+        margin-left: 6px;
+        font-size: 14px;
+    }
+    .step1 .section3 .phoneSubmit{
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        padding: 0;
+        font-size: 16px;
+        color: #fff;
+        background: #5b8def;
+        width: 125px;
+        height: 35px;
+        border-radius: 10px;
+    }
+
+
+    .step1 .section4{
+        margin-bottom: 150px;
+    }
+    .step1 .section4 .stepInner{
+        padding: 0 15px;
+        height: 100%;
+        background: #D7E9FD;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .step1 .section4 .title{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold
+    }
+    .step1 .section4 input{
+        margin-top: 10px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .step1 .section4 button{
+        margin: 40px auto 20px auto;
+    }
+    .step1 .section4 button:nth-child(3){
+        color: #fff;
+        background: #5b8def;
+        border-radius: 3px;
+    }
+    .step1 .section4 button:nth-child(4){
+        color: #5b8def;
+        background: #fff;
+        border-radius: 3px;
+    }
+    .step1 .section4 .error{
+        position: absolute;
+        top: 82px;
+        left: 15px;
+        font-size: 12px;
+        color: #FF0000;
+    }
+    /***** 스탭1 *****/
+
+
+    /***** 스탭2 *****/
+
+    .step2 .section2{
+        padding: 0 15px;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+    .step2 .sectMenu{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .step2 .sectMenu button{
+        background-color: #CCCCCC;
+        padding: 0;
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 0;
+        box-shadow: 2px 2px 5px #a1a1a143;
+    }
+    .step2 .sectMenu button:first-child{
+        margin-right: 7px;
+    }
+    .step2 .sectMenu button:last-child{
+        margin-left: 7px;
+    }
+    .step2 .sectMenu button.on{
+        background-color: #5b8def;
+    }
+    .step2 .section2 ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .step2 .section2 ul li{
+        margin-bottom: 30px;
+        border: solid 1px #CCCCCC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 470px;
+    }
+    .step2 .section2 ul li:first-child{
+        order: 2;
+        margin-right: 0;
+    }
+    .step2 .section2 ul li:last-child{
+        order: 1;
+        margin-left: 0;
+    }
+    .step2 .section2 ul li img{
+        margin-top: 40px;
+        height: 120px;
+    }
+    .step2 .section2 ul li .title{
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .step2 .section2 ul li .contentGroup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .step2 .section2 ul li .contentGroup .content{
+        text-align: center;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .step2 .section2 ul li .contentGroup .contentBox{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .step2 .section2 ul li .contentGroup .contentBox .text1{
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    .step2 .section2 ul li .contentGroup .contentBox input{
+        box-sizing: border-box;
+        width: 140px;
+        height: 30px;
+        padding: 0 6px 0 12px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #000;
+    }
+    .step2 .section2 ul li .contentGroup .text2{
+        font-size: 11px;
+        margin-top: 0;
+        color: #919191;
+    }
+    .step2 .section2 ul li .contentGroup button{
+        margin-top: 10px;
+        padding: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: #5b8def;
+        width: 250px;
+        height: 40px;
+    }
+
+    .step2 .sect2_3{
+        margin-top: -10px;
+    }
+    .step2 .sect2_3 .gridul{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        border-bottom: solid 1px #C5C5C5;
+    }
+    .step2 .sect2_3 .gridul.gridHead{
+        background-color: #5b8def;
+        border-top: solid 2px #3B3B3B;
+        border-bottom: solid 2px #3B3B3B;
+    }
+    .step2 .sect2_3 .gridul:last-child{
+        border-bottom: solid 2px #3B3B3B;
+    }
+    .step2 .sect2_3 .gridli{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: solid 1px #C5C5C5;
+        height: 60px;
+        line-height: 60px;
+        font-size: 12px;
+    }
+    .step2 .sect2_3 .gridli:nth-child(1),
+    .step2 .sect2_3 .gridli:nth-child(3){
+        display: none;
+    }
+    .step2 .sect2_3 .gridul.gridHead .gridli{
+        height: 35px;
+        line-height: 35px;
+        color: #fff;
+        font-weight: bold;
+    
+    }
+    .step2 .sect2_3 .gridul .gridli:last-child{
+        border-right: none;
+    }
+    .step2 .sect2_3 .gridli button{
+        padding: 0;
+        height: 32px;
+        width: 65px;
+        border-radius: 6px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #22D800;
+    }
+
+    .step2 .section3{
+        padding: 0 15px;
+        margin-top: 60px;
+    }
+    .step2 .section3 .stepInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step2 .section3 .subTitle{
+        font-size: 12px;
+        line-height: 22px;
+        color: #919191;
+    }
+    .step2 .section3 .contentGroup{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .step2 .section3 .contentGroup .content{
+        width: 100%;
+    }
+    .step2 .section3 .contentGroup .content .title{
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        color: #5E5E5E;
+        background: #F4F4F4;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 50px;
+        padding-left: 10px;
+        border-top: solid 1px #CCCCCC;
+        border-bottom: solid 1px #CCCCCC;
+    }
+    .step2 .section3 .contentGroup .content ul{
+        width: 100%;
+        max-height: 250px;
+        overflow: auto;
+    }
+    .step2 .section3 .contentGroup .content ul li{
+        box-sizing: border-box;
+        padding-left: 10px;
+        width: 100%;
+        height: 50px;
+        border-bottom: solid 1px #CCCCCC;
+        display: flex;
+        align-items: center;
+    }
+    .step2 .section3 .contentGroup .content ul li:last-child{
+        border-bottom: none;
+    }
+    .step2 .section3 .contentGroup .content ul li .box{
+        box-sizing: border-box;
+        width: 18px;
+        height: 18px;
+        border: solid 2px #919191;
+        border-radius: 5px;
+    }
+    .step2 .section3 .contentGroup .content ul li .text1{
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #5E5E5E;
+    }
+
+
+    .step2 .section4{
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step2 .section4 .contentGroup{
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 40px;
+        padding: 15px;
+        border: solid 1px #707070;
+        border-top: solid 3px #5b8def;
+    }
+    .step2 .section4 .contentGroup ul{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    .step2 .section4 .contentGroup li{
+        font-size: 12px;
+        line-height: 20px;
+        word-break: break-all;
+        display: inline;
+        width: auto;
+        vertical-align: middle;
+        margin: 10px 0;
+    }
+    .step2 .section4 .contentGroup li:nth-child(odd){
+        width: 60px;
+        font-size: 12px;
+        color: #5b8def;
+        font-weight: 600;
+    }
+    .step2 .section4 button{
+        margin: 30px auto 80px auto;
+        padding: 0;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: #5b8def;
+        border-radius: 10px;
+    }
+    /***** 스탭2 *****/
+
+
+    /***** 스탭3 *****/
+    .step34{
+
+    }
+    .step34 .section2{
+        padding: 0 15px;
+    }
+    .step34 .section2 .title{
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #353535;
+    }
+    .step34 .section2 .subTitle{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 520;
+        color: #919191;
+    }
+    .step34 .section2 .contentGroup{
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .step34 .section2 .contentGroup .contentBox1{
+        position: relative;
+        box-sizing: border-box;
+        margin-right: 0;
+        height: 520px;
+        border: solid 1px #CCCCCC;
+        border-top: solid 4px #5b8def;
+        padding: 0 10px;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .sortName{
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+        color: #5b8def;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #a1a1a1;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection{
+
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .contentHead{
+        grid-column-gap: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .contentHead button{
+        box-shadow: 2px 2px 5px rgb(216, 216, 216);
+        box-sizing: border-box;
+        padding: 0;
+        height: 35px;
+        width: 100%;
+        color: #fff;
+        background-color: #CCCCCC;
+        border-radius: 0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .contentHead button.select{
+        background-color: #5b8def;
+    }
+
+    .step34 .section2 .contentGroup .contentBox1 .contentSection ul{
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection li{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection li input{
+        margin: 0;
+        width: 18px;
+        height: 18px;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection li label{
+        margin-left: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection li label:hover{
+        cursor: pointer;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .inputBox{
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .inputBox .text1{
+        font-size: 14px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .inputBox input{
+        margin-left: 8px;
+        width: 150px;
+        height: 25px;
+        padding-left: 6px;
+        color: #353535;
+        border: solid 1px #919191;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .contentSection .error{
+        margin-top: 8px;
+        text-align: center;
+        font-size: 10px;
+        color: #FF0000;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .describtionGroup{
+        box-sizing: border-box;
+        padding: 0 10px;
+        position: absolute;
+        left: 0;
+        bottom: 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .describtion1{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: #EAF4FF;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .describtion2{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: #E2E2E2;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .buttonGroup{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .step34 .section2 .contentGroup .contentBox1 .buttonGroup button{
+        padding: 0;
+        margin: 0 10px 20px 10px;
+        width: 70px;
+        height: 25px;
+        background-color: #5E5E5E;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    .step34 .section2 .contentGroup .contentBox2{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .step34 .section2 .contentGroup .contentBox2 ul{
+        display: grid;
+        grid-template-columns: 120px 1fr;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        height: 40px;
+        border-bottom: solid 1px #CCCCCC;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li:nth-child(1){
+        border-top: solid 1px #CCCCCC;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li:nth-child(2){
+        border-top: solid 1px #CCCCCC;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li:nth-child(odd){
+        background-color: #D7E9FD;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li:nth-child(even){
+        border-left: solid 1px #CCCCCC;
+        cursor: pointer;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li .sortName{
+        font-size: 10px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li div{
+        font-size: 10px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step34 .section2 .contentGroup .contentBox2 li:nth-child(2) .sortContent{
+        color: #5b8def;
+    }
+    .step34 .section2 .step3Submit,
+    .step34 .section2 .step6Submit{
+        margin: 40px auto 80px auto;
+        padding: 0;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: #5b8def;
+        border-radius: 10px;
+    }
+    /***** 스탭3 *****/
+
+
+    /***** 스탭4 *****/
+    .step4 select{
+        height: 26px;
+    }
+    .step4 .section2 .contentGroup .contentBox1{
+        position: relative;
+        box-sizing: border-box;
+        margin-right: 5px;
+        height: 605px;
+        border: solid 1px #CCCCCC;
+        border-top: solid 4px #5b8def;
+        padding: 0 10px;
+    }
+    .step4 .section2 .contentGroup .contentBox2 ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .step4 .section2 .contentGroup .contentBox1 .text1{
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c1 select{
+        margin-top: 12px;
+        color: #5E5E5E;
+    }
+    .step4 .s4c2 .selectGroup{
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 4fr 1fr 4fr 1fr;
+    }
+    .step4 .s4c2 .selectGroup div{
+        line-height: 30px;
+        color: #5E5E5E;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .step4 .s4c2 .inputGroup{
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+
+    }
+    .step4 .s4c2 .inputGroup input{
+        padding: 0 0 0 8px;
+        box-sizing: border-box;
+        height: 25px;
+        border: solid 1px #919191;
+        border-radius: 5px;
+        width: 150px;
+    }
+    .step4 .s4c2 .inputGroup div{
+        color: #5E5E5E;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .step4 .s4c3 select{
+        margin-top: 30px;
+    }
+    .step4 .s4c3 .inputGroup{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .step4 .s4c3 .inputGroup .subject{
+        font-size: 14px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c3 .inputGroup input{
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 0 0 0 8px;
+        box-sizing: border-box;
+        height: 25px;
+        border: solid 1px #919191;
+        border-radius: 5px;
+        width: 200px;
+    }
+    .step4 .s4c4 .explainSection{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .step4 .s4c4 .explainSection ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+    }
+    .step4 .s4c4 .explainSection ul li{
+        font-size: 12px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid 1px #CCCCCC;
+    }
+    .step4 .s4c4 .explainSection ul li:nth-child(1),
+    .step4 .s4c4 .explainSection ul li:nth-child(2){
+        border-top: solid 1px #CCCCCC;
+    }
+    .step4 .s4c4 .explainSection ul li:nth-child(odd){
+        background-color: #D7E9FD;
+    }
+    .step4 .s4c5 .subject{
+        font-size: 14px;
+        margin-top: 30px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c5 .radioGroup{
+        margin-top: 15px;
+    }
+    .step4 .s4c5 .radioGroup .content{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .step4 .s4c5 .radioGroup .content input{
+        margin: 0;
+        width: 18px;
+        height: 18px;
+    }
+    .step4 .s4c5 .radioGroup .content label{
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c6 .inputGroup{
+        margin-top: 30px;
+        display: block;
+        flex-direction: column;
+        align-items: start;
+    }
+    .step4 .s4c6 .inputGroup .subject{
+        font-size: 14px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c6 .inputGroup input{
+        margin-top: 15px;
+        margin-left: 0;
+        padding: 0 0 0 8px;
+        box-sizing: border-box;
+        height: 25px;
+        border: solid 1px #919191;
+        border-radius: 5px;
+        width: 200px;
+    }
+    .step4 .s4c6 .inputGroup span{
+        margin-left: 5px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c7 .subject{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 30px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c7 .inputGroup{
+        margin-top: 10px;
+        display: block;
+        align-items: center;
+    }
+    .step4 .s4c7 .inputGroup input{
+        padding: 0 0 0 8px;
+        box-sizing: border-box;
+        height: 25px;
+        border: solid 1px #919191;
+        border-radius: 5px;
+        width: 200px;
+    }
+    .step4 .s4c7 .inputGroup span{
+        margin-left: 5px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step4 .s4c7 .inputGroup a{
+        font-size: 12px;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+        color: #5E5E5E;
+        text-align: center;
+        line-height: 25px;
+        height: 25px;
+        width: 100px;
+        border: solid 1px #5e5e5e;
+    }
+    /***** 스탭4 *****/
+
+
+    /***** 스탭5 *****/
+    .step5 .section2{
+        margin: 50px 0;
+        padding: 0 15px;
+    }
+    .step5 .section2 .title{
+        padding-bottom: 15px;
+        border-bottom: solid 3px #707070;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5b8def;
+    }
+    .step5 .section2 .subTitle{
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .step5 .section2 .contentGroup{
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 15px 1fr;
+    }
+    .step5 .section2 .contentGroup:last-child{
+        padding-bottom: 20px;
+        border-bottom: solid 3px #707070;
+    }
+    .step5 .section2 .contentGroup .dash{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .step5 .section2 .contentGroup .content{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .step5 .section2 .contentGroup .content span{
+        color: #FF0000;
+    }
+    .step5 .section3{
+        padding: 0 15px;
+    }
+    .step5 .section3 .buttonGroup{
+        display: flex;
+        align-items: center;
+    }
+    .step5 .section3 .buttonGroup button{
+        padding: 0;
+        margin-right: 5px;
+        width: 100%;
+        height: 35px;
+        color: #fff;
+        background-color: #CCCCCC;
+        border-radius: 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .step5 .section3 .buttonGroup button:last-child{
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .step5 .section3 .buttonGroup button.active{
+        background-color: #5b8def;
+    }
+    .step5 .section3 .text{
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+    }
+    .step5 .section3 .text span{
+        color: #5b8def;
+    }
+    .step5 .section4{
+        padding: 0 15px;
+    }
+    .step5 .section4 .table{
+        margin-top: 10px;
+    }
+    .step5 .section4 .table ul{
+        display: grid;
+        grid-template-columns: 1.5fr 4fr 6fr 5fr;
+        border-bottom: solid 1px #919191;
+        height: 88px;
+        line-height: 88px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step5 .section4 .table ul li img{
+        width: 20vw;
+    }
+    .step5 .section4 .table ul.lastUl{
+        border-top: solid 1px #919191;;
+        margin-top: 30px;
+    }
+    .step5 .section4 .table ul:first-child{
+        border-top: solid 1px #919191;
+        height: 66px;
+        line-height: 66px;
+        background-color: #D7E9FD;
+        font-size: 10px;
+        font-weight: bold;
+        color: #5E5E5E;
+    }
+    .step5 .section4 .table ul:first-child li div {
+        height: 33px;
+        line-height: 33px;
+    }
+    .step5 .section4 .table ul li{
+        border-left: solid 1px #919191;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .step5 .section4 .table ul li span{
+        display: none;
+    }
+    .step5 .section4 .table ul li:first-child{
+        border-left: none;
+    }
+    .step5 .section4 .table ul li div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        line-height: 44px;
+        font-size: 10px;
+    }
+    .step5 .section4 .table ul li .button{
+        background-color: #F26D00;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 0;
+        width: 70px;
+        height: 28px;
+        border-radius: 14px;
+    }
+
+
+    .step5 .section5{
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+    .step5 .section5 .text{
+        font-size: 10px;
+        font-weight: bold;
+        color: #FF1C1C;
+        line-height: 15px;
+    }
+    .step5 .section6{
+        height: 100px;
+    }
+    /***** 스탭5 *****/
+
+
+    /***** 스탭6 *****/
+    .step6.step34 .section2 .contentGroup{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .step6 .section2 .contentGroup .contentBox2 .contentBox2Title{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li div{
+        width: 100%;
+        text-align: center;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(1){
+        background-color: #5b8def !important;
+        border-top: solid 1px #CCCCCC;
+        display: none;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(2){
+        background-color: #5b8def !important;
+        border-top: solid 1px #CCCCCC;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(3){
+        background-color: #5b8def !important;
+        border-top: solid 1px #CCCCCC;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(odd){
+        background-color: auto;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(even){
+        border-left: none;
+        cursor: default;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(3n+1){
+        background-color: #D7E9FD;
+        border-right: none;
+        grid-column: 1 / 3;
+    }
+    .step6.step34 .section2 .contentGroup .contentBox2 li:nth-child(3n+2){
+        border-right: solid 1px #CCCCCC;
+    }
+    /***** 스탭6 *****/
+}

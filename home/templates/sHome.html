@@ -1,0 +1,149 @@
+{% extends "sBase.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/sHome.css' %}?ver=12.25">
+<script defer src="{% static 'js/sHome.js' %}?ver=12.25"></script>
+{% endblock %}
+
+{% block contents %}
+<div class="section1">
+    <div class="inner">
+        <div class="gridBox">
+            <div class="grid grid1">
+                <img src="../../static/img/logo_white.svg" alt="로고">
+            </div>
+            <div class="grid grid2">
+                <div class="text1">카보는</div>
+                <div class="text1">다이렉트 자동차 보험시장을</div>
+                <div class="text1">혁신하는 스타트업입니다.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section2">
+    <div class="inner">
+        <div class="gridBox">
+            <div class="grid grid1">
+                <div class="text1">비교가입부터, 관리까지</div>
+                <div class="text1">저렴하고 편리하고 안전하게</div>
+                <div class="text2">다이렉트 자동차 보험 중개 솔루션</div>
+                <div class="text2">"다이렉트 카보"</div>
+                <div class="buttonBox">
+                    <button class="button1" onclick="window.open('/serviceHome/', '_blank'); sSaveLog('서비스페이지로 이동버튼')">서비스 이용하기 (beta ver)</button>
+                    <button class="button2" onclick="shandleAppDownButton(); sSaveLog('App다운로드 버튼')">App 다운로드 (beta ver)</button>
+                </div>
+            </div>
+            <div class="grid grid2">
+                <img src="../../static/img/home_section2_phone.png" alt="phone">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section3">
+    <div class="flexBox">
+        <div class="text1">카보는 고객님께 가장 유리한 조건으로 중개하는</div>
+        <div class="text1"><span>"보험 중개사"</span>입니다.</div>
+        <img src="../../static/img/logo_blue.svg" alt="logo">
+        <div class="text1">보험 중개사란?</div>
+        <div class="text2">보험회사를 위하여 보험계약 체결을 중개 또는 대리하는 설계사 대리점과 달리</div>
+        <div class="text2"><span>"독립적으로 보험계약 체결을 중개"</span>하는 보험모집 조직</div>
+    </div>
+</div>
+<div class="section4">
+    <div class="inner">
+        <div class="flexBox">
+            <div class="text1">다이렉트 자동차 보험 가입부터 관리까지!</div>
+            <div class="text1">카보에게 맡겨주세요.</div>
+            <div class="spacer"></div>
+            <div class="gridBox gridBox1">
+                <div class="gridImg">
+                    <img src="../../static/img/sHome_icon1.svg" alt="logo">
+                </div>
+                <div class="grid2">
+                    <div class="text1 rightText">보험 광고 전화? 걱정하지 마세요.</div>
+                    <div class="text2 rightText" >가입권유 전화는 일체 없습니다.</div>
+                    <div class="text2 rightText">고객님이 원하실때만  보조드려요.</div>
+                    <div class="text2 rightText">보험 광고 전화 걱정없이 이용하세요.</div>
+                    <div class="text2 rightText">고객님의 정보는 안전합니다.</div>
+                </div>
+            </div>
+            <div class="gridBox gridBox2">
+                <div class="grid1">
+                    <div class="text1">자동차 보험료를 한번에 비교하세요.</div>
+                    <div class="text2">Web, App 서비스를 통해 고객님이 직접</div>
+                    <div class="text2">보험료를 비교할 수 있어요.</div>
+                    <div class="text2">모든 보험사의 다이렉트 보험료를</div>
+                    <div class="text2">직접 한번에! 비교해보세요.</div>
+                </div>
+                <div class="gridImg">
+                    <img src="../../static/img/sHome_icon2.svg" alt="logo">
+                </div>
+            </div>
+            <div class="gridBox gridBox1">
+                <div class="gridImg">
+                    <img src="../../static/img/sHome_icon3.svg" alt="logo">
+                </div>
+                <div class="grid2">
+                    <div class="text1 rightText">수수료 걱정없이 가입하세요.</div>
+                    <div class="text2 rightText">카보는 중개수수료를 보험사로부터 받습니다.</div>
+                    <div class="text2 rightText">다이렉트 자동차 보험료에 수수료가 포함되어 있으니</div>
+                    <div class="text2 rightText">걱정말고 이용하세요!</div>
+                    <div class="text2 rightText">보험사 홈페이지에서 가입하시는 것과 같은 상품입니다.</div>
+                </div>
+            </div>
+            <div class="gridBox gridBox2">
+                <div class="grid1">
+                    <div class="text1">온라인 가입이 어려우면 도와드려요.</div>
+                    <div class="text2">온라인 가입이 어려우신 분들은</div>
+                    <div class="text2">저희가 보조해드려요.</div>
+                    <div class="text2">보장 설정과 조작이 어려우신 분들도</div>
+                    <div class="text2">다이렉트보험을 쉽게 가입하고 이용하세요.</div>
+                </div>
+                <div class="gridImg">
+                    <img src="../../static/img/sHome_icon4.svg" alt="logo">
+                </div>
+            </div>
+            <div class="gridBox gridBox1">
+                <div class="gridImg">
+                    <img src="../../static/img/sHome_icon5.svg" alt="logo">
+                </div>
+                <div class="grid2">
+                    <div class="text1 rightText">사고 시 상담이 필요하세요?</div>
+                    <div class="text2 rightText">사고나셔서 당황하셨죠?</div>
+                    <div class="text2 rightText">카보가 고객님이 어떻게 하는 것이 유리하신지</div>
+                    <div class="text2 rightText">조언해드릴 수 있어요.</div>
+                    <div class="text2 rightText">다이렉트 보험을 설계사에게 가입한 것처럼 이용해보세요.</div>
+                </div>
+            </div>
+            <div class="gridBox gridBox2">
+                <div class="grid1">
+                    <div class="text1">가입부터 관리까지 맡겨만 주세요.</div>
+                    <div class="text2">매년 카보를 통해 </div>
+                    <div class="text2">자동차 보험을 관리해 보세요.</div>
+                    <div class="text2">신경쓸일 없이, 유리한 조건으로 가입이 가능해요!</div>
+                </div>
+                <div class="gridImg">
+                    <img src="../../static/img/sHome_icon6.svg" alt="logo">
+                </div>
+            </div>
+            <div class="text3">다이렉트 카보를 이용해보세요. 새로운 경험을 드립니다.</div>
+            <div class="buttonBox">
+                <button class="button1" onclick="window.open('/serviceHome/', '_blank'); sSaveLog('서비스페이지 이동 버튼')">서비스 이용하기 (beta ver)</button>
+                <button class="button2" onclick="shandleAppDownButton(); sSaveLog('App 다운로드 버튼')">App 다운로드 (beta ver)</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section5">
+    <div class="flexBox">
+        <div class="text1">카보에 대해 더 알고싶으신 분들을 위해</div>
+        <div class="text1">소개드려요!</div>
+        <div class="spacer"></div>
+        <button onclick="window.location.href = '/about/'; sSaveLog('홈페이지 하단 About')">About CABO</button>
+        <button onclick="window.location.href = '/business/'; sSaveLog('홈페이지 하단 Business')">Our Business</button>
+        <button onclick="window.location.href = '/contact/'; sSaveLog('홈페이지 하단 Contact')">Contact Us</button>
+    </div>
+</div>
+{% endblock %}

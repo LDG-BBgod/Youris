@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/consulting.css' %}?ver=11.29">
+<script>
+    const userIP = "{{ userIP }}"
+</script>
+<script defer src="{% static 'js/userChat.js' %}?ver=11.29"></script>
+<script defer src="{% static 'js/consulting.js' %}?ver=11.29"></script>
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection()">확인</button>
+</div>
+<section class="sectionFix" style="display: none;">
+    <div class="chatBox">
+        <div class="chatBoxHead">
+            <img class="hover" src="../../static/img/home_chatBack.svg" alt="뒤로가기" onclick="closeChat()">
+        </div>
+        <div class="chatBoxMiddle">
+            
+        </div>
+        <div class="chatBoxFoot">
+            <textarea id="message" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+            <button id="sendButton"><img src="../../static/img/sendButton.svg" alt=""></button>
+        </div>
+    </div>
+</section>
+<div class="mobileChatsection" style="display: none;">
+    <div class="chatGroup">
+        <textarea id="messageMobile" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+        <button id="sendButtonMobile"><img src="../../static/img/sendButton.svg" alt=""></button>
+    </div>
+</div>
+<section class="section1">
+    <a class="logo-box" href="/"><img src="../../static/img/logo_blue.svg" alt="로고"></a>
+    <div class="content-box">
+        <div class="header-box">
+            <ul>
+                <li id="list0">
+                    <div class="date date0"></div>
+                    <div class="day day0"></div>
+                </li>
+                <li id="list1">
+                    <div class="date date1"></div>
+                    <div class="day day1"></div>
+                </li>
+                <li id="list2">
+                    <div class="date date2"></div>
+                    <div class="day day2"></div>
+                </li>
+                <li id="list3">
+                    <div class="date date3"></div>
+                    <div class="day day3"></div>
+                </li>
+                <li id="list4">
+                    <div class="date date4"></div>
+                    <div class="day day4"></div>
+                </li>
+                <li id="list5">
+                    <div class="date date5"></div>
+                    <div class="day day5"></div>
+                </li>
+                <li id="list6">
+                    <div class="date date6"></div>
+                    <div class="day day6"></div>
+                </li>
+            </ul>          
+        </div>
+        <div class="inner-box">
+            <div class="time-box">
+                <div class="text">날짜를 선택해 주세요</div>
+                <ul class="time-list" style="display: none;">
+                    <li id="time-list0">10:00~11:00<br><span id="time-list0-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list1">11:00~12:00<br><span id="time-list1-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list2">12:00~13:00<br><span id="time-list2-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list3">13:00~14:00<br><span id="time-list3-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list4">14:00~15:00<br><span id="time-list4-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list5">15:00~16:00<br><span id="time-list5-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list6">16:00~17:00<br><span id="time-list6-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list7">17:00~18:00<br><span id="time-list7-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list8">18:00~19:00<br><span id="time-list8-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list9">19:00~20:00<br><span id="time-list9-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list10">20:00~21:00<br><span id="time-list10-span" style="display: none;">예약됨</span></li>
+                    <li id="time-list11">21:00~22:00<br><span id="time-list11-span" style="display: none;">예약됨</span></li>
+                </ul>
+            </div>
+            <div class="agreement">
+                <input class="input-agreement" type="checkbox" name="section-input-agreement" id="check-agreement">
+                <label for="check-agreement">개인정보 처리방침 동의</span>
+                <a href="/agreement/" target="_blank">[보기]</a>                
+            </div>
+            <div class="bottom-content">
+                <div class="button-tool selectType-list0 select" style="display: none;">전화</div>
+                <div class="button-tool selectType-list1" style="display: none;">카톡</div>
+                <div class="text-box">
+                    <input id="input-selectType" type="text" placeholder="전화번호를 입력해주세요.">
+                    <div class="input-bottom-text">상담 이후 광고, 영업성 연락은 절대 가지 않습니다!</div>
+                </div>          
+                <div class="button-submit">
+                    <div class="box-content" id="submitButton">신청하기</div>
+                    <div class="arrow-box"><img src="../../static/img/white_arrow.svg" alt="화살표"></div>
+                </div>
+            </div>
+            <div class="error"></div>
+        </div>
+    </div>
+</section>
+<div class="section-form" style="display: none;">
+    <form action="" method="post" name="form">
+        {% csrf_token %}
+        {% for field in form %}
+        <input class="input-text {{ field.name }}" type="{{ field.field.widget.input_type }}" id="form_{{ field.id_for_label }}" placeholder="{{ field.label }}" name="{{ field.name }}">
+        {% endfor %}
+        <button type="submit">회원가입</button>
+    </form>
+</div>
+{% endblock %}

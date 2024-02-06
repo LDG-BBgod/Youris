@@ -1,0 +1,55 @@
+{% extends "sBase.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/sBusiness.css' %}?ver=12.07">
+{% endblock %}
+
+{% block contents %}
+<div class="section1">
+    <div class="inner">
+        <div class="text1">Business</div>
+        <div class="spacer"></div>
+        <div class="text2">자동차 보험 <span>"광고"</span> 사업을 <span>"진행"</span> 중입니다.</div>
+        <div class="text2">자동차 보험 <span>"중개"</span> 서비스를 <span>"준비"</span> 중입니다.</div>
+    </div>
+</div>
+<div class="section2">
+    <div class="inner">
+        <div class="box1">
+            <div class="text1">광고 서비스</div>
+            <div class="content">
+                <div class="text2">계약된 회사의 자동차 보험 상품을 광고합니다.</div>
+                <div class="text2">보험 가입 고객이 조금 더 쉽게 보험사 홈페이지에 접속할 수 있습니다.</div>
+                <div class="text2">중개 서비스로 사업 모델을 전환하고 있는 중입니다.</div>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="../../static/img/rdArrow.svg" alt="arrow">
+        </div>
+
+        <div class="box2">
+            <div class="text1">중개 서비스</div>
+            <div class="content">
+                <div class="text2">모든 보험사의 자동차 보험 상품을 비교하고 고객과 보험사를 연결합니다. </div>
+                <div class="text2">보험 가입 고객은 저렴하고 안전하고 편리하게 자동차보험을</div>
+                <div class="text2">가입하고 관리할 수 있습니다.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section3">
+    <div class="flexBox">
+        <div class="text1">카보와 파트너가 되어 고객에게 가치를 전달해보세요. </div>
+        <div class="text2">카보는 다이렉트 자동차 보험상품을 중개하기 위해</div>
+        <div class="text2">보험사들과 업무 협약을 진행 중입니다.</div>
+        <div class="text2">카보는 자동차 보험상품 중개를 통해 고객 유입을 도와드립니다.</div>
+        <div class="buttonBox">
+            <button class="button1" onclick="window.location.href = '/serviceHome/'">서비스 이용하기 (beta ver)</button>
+            <button class="button2" onclick="shandleAppDownButton()">App 다운로드 (beta ver)</button>
+            <button class="button3" onclick="window.location.href = '/contact/'">Contact Us</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

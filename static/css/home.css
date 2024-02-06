@@ -1,0 +1,494 @@
+/***** COMMON *****/
+.positionBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 100px 0;
+}
+/***** chatConsult *****/
+.chatConsult{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 9000;
+}
+.chatConsult button{
+    width: 150px;
+    height: 50px;
+    background: #34464B;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+/***** chatConsult *****/
+
+/***** 섹션B *****/
+.sectionB{
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 5px #f5f5f586 inset;
+}
+
+/***** 섹션1 *****/
+.section1{
+    margin-top: 80px;
+}
+.section1 .title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    line-height: 45px;
+    text-align: center;
+}
+.section1 .tagGroup{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.section1 .tagGroup .content{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.section1 .tagGroup .content span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #34464B;
+    margin-left: 6px;
+}
+.section1 .buttonGroup{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.section1 .buttonGroup .content{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .buttonGroup .content a{
+    line-height: 56px;
+    text-align: center;
+    background-color: #5B8DEF;
+    width: 280px;
+    height: 56px;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    color: #fff;
+}
+.section1 .buttonGroup .content:last-child a{
+    background-color: #03C988;
+}
+.section1 .buttonGroup .content img{
+    height: 35px;
+    margin-top: 10px;
+}
+
+/***** 섹션2 *****/
+.section2{
+
+}
+.section2 ul{
+    display: flex;
+    align-items: center;
+}
+.section2 ul li{
+    position: relative;
+    margin: 0 50px;
+}
+.section2 ul li .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #5B8DEF;
+    line-height: 35px;
+}
+.section2 ul li .comment{
+    margin-top: 30px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #414141;
+}
+.section2 ul li:last-child{
+    display: none;
+}
+.section2 ul li .comment span{
+    font-weight: bold;
+}
+.section2 ul li img{
+    height: 480px;
+}
+.section2 .backImg{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 265px;
+    height: 465px;
+    background-color: #D2D2D2;
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    z-index: -1;
+}
+
+/***** 섹션3 *****/
+.section3{
+    background-color: #F4F1FF;
+}
+.section3 .title{
+    font-size: 32px;
+    font-weight: bold;
+}
+.section3 ul{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.section3 ul li{
+    margin: 20px 25px;
+    background-color: #fff;
+    height: 120px;
+    width: 160px;
+    border: solid 1px #E3E3E3;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section3 ul li img{
+    height: 60px;
+}
+.section3 ul li .comment{
+    margin-top: 6px;
+    font-size: 17px;
+}
+
+/***** 섹션3 *****/
+.section4{
+
+}
+.section4 .subTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.section4 .title{
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #5B8DEF;
+}
+.section4 .contentGroup{
+    margin-top: 50px;
+}
+.section4 .contentGroup .content{
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 650px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    background-color: #FBFBFB;
+    border: solid 1px #8E8E8E;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+.section4 .contentGroup .content:nth-child(1):hover{
+    height: 460px;
+}
+.section4 .contentGroup .content:nth-child(2):hover{
+    height: 420px;
+}
+.section4 .contentGroup .content:nth-child(3):hover{
+    height: 400px;
+}
+.section4 .contentGroup .content:nth-child(4):hover{
+    height: 420px;
+}
+.section4 .contentGroup .content:nth-child(5):hover{
+    height: 450px;
+}
+.section4 .contentGroup .content:nth-child(6):hover{
+    height: 420px;
+}
+.section4 .contentGroup .content:nth-child(7):hover{
+    height: 530px;
+}
+.section4 .contentGroup .content:nth-child(8):hover{
+    height: 350px;
+}
+.section4 .contentGroup .content .imgBox{
+    height: 80px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .contentGroup .content img{
+    width: 180px;
+
+}
+.section4 .contentGroup .content .commentGroup{
+    
+}
+.section4 .contentGroup .content .commentGroup .subject{
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.section4 .contentGroup .content .commentGroup .comment{
+    padding-right: 10px;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #34464B;
+    line-height: 20px;
+}
+.section4 .contentGroup .content .commentGroup .comment span{
+    color: #FF5246;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    /***** COMMON *****/
+    .positionBox{
+        padding: 80px 0;
+    }
+
+    /***** chatConsult *****/
+    .chatConsult{
+        display: none;
+    }
+    /***** chatConsult *****/
+    
+    /***** 섹션B *****/
+    .sectionB{
+        width: 100%;
+        height: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px 5px #f5f5f586 inset;
+    }
+
+    /***** 섹션1 *****/
+    .section1{
+        margin-top: 60px;
+    }
+    .section1 .title{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .section1 .tagGroup{
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section1 .tagGroup .content{
+        margin: 10px 10px;
+    }
+    .section1 .tagGroup .content img{
+        height: 14px;
+    }
+    .section1 .tagGroup .content span{
+        font-size: 12px;
+        margin-left: 8px;
+    }
+    .section1 .buttonGroup{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1 .buttonGroup .content{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1 .buttonGroup .content:last-child{
+        margin-top: 40px;
+    }
+    .section1 .buttonGroup .content a{
+        line-height: 50px;
+        text-align: center;
+        background-color: #5B8DEF;
+        width: 285px;
+        height: 50px;
+        box-shadow: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0;
+        color: #fff;
+    }
+    .section1 .buttonGroup .content:last-child a{
+        background-color: #03C988;
+    }
+    .section1 .buttonGroup .content img{
+        height: 32px;
+        margin-top: 8px;
+    }
+
+    /***** 섹션2 *****/
+    .section2{
+
+    }
+    .section2 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2 ul li{
+        position: relative;
+        margin: 0;
+    }
+    .section2 ul li .title{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5B8DEF;
+        line-height: 32px;
+    }
+    .section2 ul li .comment{
+        text-align: center;
+        margin-top: 30px;
+        line-height: 26px;
+        font-size: 12px;
+        color: #414141;
+    }
+    .section2 ul li:first-child .comment{
+        display: none;
+    }
+    .section2 ul li:last-child{
+        display: block;
+    }
+    .section2 ul li .comment span{
+        font-weight: bold;
+    }
+    .section2 ul li img{
+        margin-top: 40px;
+        height: 450px;
+    }
+    .section2 .backImg{
+        display: block;
+        margin-top: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 260px;
+        height: 450px;
+        background-color: #d2d2d2b3;
+        filter: blur(12px);
+        -webkit-filter: blur(12px);
+        z-index: -1;
+    }
+
+    /***** 섹션3 *****/
+    .section3{
+        background-color: #F4F1FF;
+    }
+    .section3 .title{
+        text-align: center;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: bold;
+    }
+    .section3 .title span{
+        display: none;
+    }
+    .section3 ul{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section3 ul li{
+        box-sizing: border-box;
+        margin: 10px 10px;
+        background-color: #fff;
+        height: 100px;
+        width: 130px;
+        border: solid 1px #E3E3E3;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section3 ul li img{
+        height: 60px;
+    }
+    .section3 ul li .comment{
+        margin-top: 5px;
+        font-size: 13px;
+    }
+
+    /***** 섹션3 *****/
+    .section4{
+
+    }
+    .section4 .subTitle{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .section4 .title{
+        text-align: center;
+        line-height: 30px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5B8DEF;
+    }
+    .section4 .contentGroup{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section4 .contentGroup .content{
+        margin: 10px 10px;
+        box-sizing: border-box;
+        width: 130px;
+        height: 35px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #FBFBFB;
+        border: solid 1px #8E8E8E;
+        border-radius: 0;
+        overflow: hidden;
+        transition: all 0.6s;
+    }
+    .section4 .contentGroup .content:hover{
+        height: 35px !important;
+    }
+    .section4 .contentGroup .content .imgBox{
+        height: 35px;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section4 .contentGroup .content img{
+        width: 90px;
+        margin-top: 0;
+    }
+    .section4 .contentGroup .content .commentGroup{
+        display: none;
+    }
+}

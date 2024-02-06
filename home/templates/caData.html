@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/caData.css' %}?ver=3">
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection()">확인</button>
+</div>
+<section class="section1">
+{% for content in data %}
+<div>
+    <ul>
+        <li>
+            방문날짜 : <span>{{ content.registerDate }}</span>
+        </li>
+        <li>
+            방문횟수 : <span>{{ content.visitCount }}</span>
+        </li>
+        <li>
+            Self비교 횟수 : <span>{{ content.selfCompareCount }}</span>
+        </li>
+    </ul>
+</div>
+{% endfor %}
+</section>
+{% endblock %}

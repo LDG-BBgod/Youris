@@ -1,0 +1,537 @@
+body{
+    word-break: keep-all;
+}
+section{
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+.inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position:  relative;
+}
+.mask{
+    position: fixed;
+    z-index: 9000;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.loading-img{
+    position: fixed;
+    z-index: 9999;
+    top: 50vh;
+    left: 50vw;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+}
+.hover:hover{
+    cursor: pointer;
+}
+.br{
+    display: none;
+}
+.rbr{
+    display: block;
+}
+.positionBox{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* FLOAT CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+/***** Button *****/
+.button{
+    box-sizing: border-box;
+    display: block;
+    padding: 0.6em 2.2em;
+    border-radius: 0.7em;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px #6060604d;
+}
+
+/***** Input *****/
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+
+/***** 헤더 *****/
+header{
+    background: #fff;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 1px 5px #a8a8a82c;
+}
+header .inner{
+    max-width: 1400px;
+    height: 80px;
+}
+header .logo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+header .logo .logo-name{
+    color: #5B8DEF;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+}
+header .logo img{
+    display: none;
+    margin-top: 5px;
+    height: 28px;
+}
+header .menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header .menu .menuContent{
+    display: flex;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+}
+header .menu .menuGroup{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header .menu .menuGroup .contentGroup{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+header .menu .menuGroup .contentGroup img{
+    display: none;
+}
+header .menu .menuBar,
+header .menu .menuX{
+    display: none;
+}
+header .menu .on{
+    display: block !important;
+}
+header .menu .off{
+    display: none !important;
+}
+header .addInfo{
+    display: flex;
+    align-items: center;
+    line-height: 80px;
+}
+header .addInfo a{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #34464B;
+}
+
+/***** 푸터 *****/
+footer{
+    position: relative;
+    z-index: 3000;
+    background: #34464B;
+    height: 150px;
+    width: 100%;
+}
+footer .inner{
+    position: relative;
+    height: 150px;
+    padding-top: 20px;
+}
+footer .left-side{
+
+}
+footer .left-side p{
+    margin-top: 8px;
+    color: #ccc;
+    font-size: 12px;
+}
+footer img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+}
+footer .right-side{
+    text-align: right;
+}
+footer .right-side p{
+    margin-top: 8px;
+    color: #ccc;
+    font-size: 12px;
+}
+footer .right-side a{
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 5px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+
+
+
+/***** section1 *****/
+.section1{
+    padding-top: 80px;
+    background-color: #EAF4FF;
+}
+.section1 .title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 45px;
+}
+.section1 a{
+    box-sizing: border-box;
+    margin-top: 40px;
+    background-color: #5B8DEF;
+    width: 320px;
+    height: 48px;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 48px;
+}
+.section1 img{
+    margin-top: 10px;
+    height: 35px;
+}
+/***** section1 *****/
+
+
+/***** section2 *****/
+.section2{
+
+}
+.section2 ul{
+    display: flex;
+    align-items: center;
+}
+.section2 ul li{
+
+}
+.section2 ul li img{
+    height: 240px;
+    margin-right: 250px;
+}
+.section2 ul li .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #5B8DEF;
+    margin-bottom: 40px;
+}
+.section2 ul li .content{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+/***** section2 *****/
+
+
+/***** section3 *****/
+.section3{
+
+}
+.section3 ul{
+    display: flex;
+    align-items: center;
+}
+.section3 ul li{
+
+}
+.section3 ul li img{
+    height: 240px;
+    margin-left: 150px;
+}
+.section3 ul li .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #5B8DEF;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+.section3 ul li .content{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+}
+/***** section3 *****/
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .positionBox{
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .br{
+        display: block;
+    }
+    .rbr{
+        display: none;
+    }
+    
+    /***** 헤더 *****/
+    header{
+        padding: 0 15px;
+    }
+    header .inner{
+        height: 60px;
+    }
+    header .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    header .logo .logo-name{
+        font-size: 18px;
+        /* display: none; */
+    }
+    header .logo img{
+        display: block;
+        margin-top: 5px;
+        height: 28px;
+    }
+    header .menu{
+        float: right;
+        height: 100%;
+        align-items: center;
+    }
+    header .menu .menuGroup,
+    header .menu .menuX{
+        display: none;
+    }
+    header .menu .menuBar{
+        display: block;
+    }
+    header .menu .menuGroup{
+        width: calc(100% + 30px);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        margin-left: -15px;
+        background: #fff;
+        height: 100vh;
+    }
+    header .menu .menuContent{
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        padding: 15px 0;
+    }
+    header .menu .menuContent:last-child{
+        border-bottom: none;
+    }
+    header .menu .menuGroup .contentGroup{
+        margin-left: 15px;
+    }
+    header .menu .menuGroup .contentGroup img{
+        display: block;
+    }
+    header .addInfo{
+        line-height: 60px;
+    }
+    header .addInfo a{
+        font-size: 14px;
+    }
+
+    /******** footer ********/
+    footer{
+        height: 400px;
+    }
+    footer .inner{
+        height: 400px;
+        padding: 100px 20px 0 20px;
+        text-align: center;
+    }
+    footer .left-side{
+        float: none;
+    }
+    footer .left-side p{
+        margin-top: 8px;
+        color: #ccc;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer img{
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    footer .right-side{
+        float: none;
+        text-align: center;
+    }
+    footer .right-side p{
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer .right-side a{
+    }
+
+    /***** section1 *****/
+    .section1{
+        padding-top: 60px;
+        background-color: #EAF4FF;
+    }
+    .section1 .title{
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        line-height: 30px;
+    }
+    .section1 a{
+        box-sizing: border-box;
+        margin-top: 40px;
+        background-color: #5B8DEF;
+        width: 260px;
+        height: 40px;
+        padding: 0;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+    }
+    .section1 img{
+        margin-top: 10px;
+        height: 26px;
+    }
+    /***** section1 *****/
+
+
+    /***** section2 *****/
+    .section2{
+
+    }
+    .section2 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2 ul li{
+
+    }
+    .section2 ul li img{
+        height: 200px;
+        margin-right: 0;
+    }
+    .section2 ul li .title{
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5B8DEF;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .section2 ul li .content{
+        margin-top: 20px;
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+    }
+    /***** section2 *****/
+
+
+    /***** section3 *****/
+    .section3{
+
+    }
+    .section3 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section3 ul li:first-child{
+        order: 2;
+    }
+    .section3 ul li:last-child{
+        order: 1;
+    }
+    .section3 ul li img{
+        height: 200px;
+        margin-left: 0;
+    }
+    .section3 ul li .title{
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5B8DEF;
+        margin-bottom: 40px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .section3 ul li .content{
+        margin-top: 20px;
+        font-size: 14px;
+        color: #000;
+        line-height: 22px;
+        text-align: center;
+    }
+    /***** section3 *****/
+
+}

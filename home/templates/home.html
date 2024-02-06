@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}?ver=12.07">
+<script>
+    const userIP = "{{ userIP }}"
+</script>
+<script defer src="{% static 'js/userChat.js' %}?ver=12.07"></script>
+<script defer src="{% static 'js/home.js' %}?ver=12.07"></script>
+{% endblock %}
+
+{% block contents %}
+<div class="secretSection">
+    <input type="text" id="spw" placeholder="비번">
+    <button class="hover" onclick="secretSection(); sSaveLog('서비스페이지 비밀번호 확인')">확인</button>
+    <div class="text">비밀번호는 010-5048-7229로 문의주세요</div>
+</div>
+<section class="chatConsult">
+    <button class="button hover" onclick="OpenChat(); sSaveLog('채팅상담버튼')">채팅상담</button>
+</section>
+<section class="sectionFix" style="display: none;">
+    <div class="chatBox">
+        <div class="chatBoxHead">
+            <img class="hover" src="../../static/img/home_chatBack.svg" alt="뒤로가기" onclick="closeChat()">
+        </div>
+        <div class="chatBoxMiddle">
+            
+        </div>
+        <div class="chatBoxFoot">
+            <textarea id="message" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+            <button id="sendButton"><img src="../../static/img/sendButton.svg" alt=""></button>
+        </div>
+    </div>
+</section>
+<div class="mobileChatsection" style="display: none;">
+    <div class="chatGroup">
+        <textarea id="messageMobile" type="text" oninput="resize(this, event)" spellcheck="false" placeholder="메세지를 입력해주세요"></textarea>
+        <button id="sendButtonMobile"><img src="../../static/img/sendButton.svg" alt=""></button>
+    </div>
+</div>
+<section class="section1">
+    <div class="positionBox">
+        <div class="title">다이렉트 자동차보험<br>카보에서 비교하고 가입하세요</div>
+        <div class="tagGroup">
+            <div class="content">
+                <img src="../../static/img/home_section1_tag1.svg" alt="">
+                <span>공식 다이렉트 상품</span>
+            </div>
+            <div class="content">
+                <img src="../../static/img/home_section1_tag2.svg" alt="">
+                <span>추가 수수료 X</span>
+            </div>
+            <div class="content">
+                <img src="../../static/img/home_section1_tag3.svg" alt="">
+                <span>가입 권유전화 X</span>
+            </div>
+            <div class="content">
+                <img src="../../static/img/home_section1_tag4.svg" alt="">
+                <span>개인정보 유출 X</span>
+            </div>
+            <div class="content">
+                <img src="../../static/img/home_section1_tag5.svg" alt="">
+                <span>최대 3만원 상품권</span>
+            </div>
+        </div>
+        <div class="buttonGroup">
+            <div class="content">
+                <a class="button" href="/selfCompareHome" onclick="sSaveLog('서비스페이지 Self 비교가입 버튼')">다이렉트 보험 Self 비교가입</a>
+                <img src="../../static/img/home_section1_button1.png" alt="">
+            </div>
+            <div class="content">
+                <a class="button" href="/consulting" onclick="sSaveLog('서비스페이지 전화가입 버튼')">다이렉트 전화 간편가입</a>
+                <img src="../../static/img/home_section1_button2.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="sectionB"></div>
+<section class="section2">
+    <div class="positionBox">
+        <ul>
+            <li>
+                <div class="title">현재 고객님의 자동차보험,<br>최적보험료로 가입하고 계신가요?</div>
+                <div class="comment">다이렉트 카보는 다이렉트 자동차 보험<br>(보험사 홈페이지 동일가격 상품, 추가 수수료 X)<br>비교가입을 도와드립니다.<br><span>가입권유 전화와 광고 걱정 없이</span> 보장과 조건을<br>비교하고 최적 보험료로 가입해보세요.</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section2_phone.png" alt="">
+                <div class="backImg"></div>
+            </li>
+            <li>
+                <div class="comment">다이렉트 카보는 다이렉트 자동차 보험<br>(보험사 홈페이지 동일가격 상품, 추가 수수료 X)<br>비교가입을 도와드립니다.<br><span>가입권유 전화와 광고 걱정 없이</span> 보장과 조건을<br>비교하고 최적 보험료로 가입해보세요.</div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section3">
+    <div class="positionBox">
+        <div class="title">쉽고 똑똑한 자동차보험<span>, </span><br class="br">다이렉트 카보</div>
+        <ul>
+            <li>
+                <img src="../../static/img/home_section3_img1.png" alt="">
+                <div class="comment">간편갱신</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section3_img2.png" alt="">
+                <div class="comment">간편가입</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section3_img3.png" alt="">
+                <div class="comment">사고관리</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section3_img4.png" alt="">
+                <div class="comment">계약변경</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section3_img5.png" alt="">
+                <div class="comment">간편상담</div>
+            </li>
+            <li>
+                <img src="../../static/img/home_section3_img6.png" alt="">
+                <div class="comment">비교견적</div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section4">
+    <div class="positionBox">
+        <div class="subTitle">카보와 함께하는 각종 혜택을 확인해보세요</div>
+        <div class="title">가입시 최대 3만원 상당의 상품권을 지급해드립니다</div>
+        <div class="contentGroup">
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h1.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">KB손해보험 보상서비스는 그대로! 다이렉트보험료는 저렴하게!</div>
+                    <div class="comment">1.마일리지특약 35%할인 (연간 2천Km이하)</div>
+                    <div class="comment">2.인터넷 가입 18.1%할인 (자사 오프라인 대비 평균)</div>
+                    <div class="comment">3.자녀할인특약 8%할인 (만1세이상~6세이하/1인,부부한정)</div>
+                    <div class="comment">4.티맵안전운전특약 12.3%할인 (1000Km이상/70점이상/1인 또는 부부한정)</div>
+                    <div class="comment">5.무사고할인 최대 13%할인 (최근 3년 연속)</div>
+                    <div class="comment">6.블랙박스특약 4.7%할인 (차량연식 3년미만)</div>
+                    <div class="comment">7.걸음수할인특약 3%할인 (90일이내 하루 5천보 달성일 50일 이상 1인, 부부한정)</div>
+                    <div class="comment">8.커넥티드카 안전운전특약 12.3%할인 (70일내 1천Km이상, 70점이상, 현대/기아/쌍용차)</div>
+                    <div class="comment">9.대중교통특약 8%할인 (직전3개월 12만원 이상, 1인한정)</div>
+                    <div class="comment">10.첨단안전장치 장착특약 7%할인 (출고시 전방충돌방지 장치와 차선이탈방지 장치 모두 장착시)</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h2.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">든든한 보상서비스는 그대로! 가격은 다이렉트! 다양한 특약할인 챙기시고! 더욱 알뜰하게 가입하세요!</div>
+                    <div class="comment">1.현대해상 오프라인 대비 평균 17.3% 저렴(개인용)</div>
+                    <div class="comment">2.연간 주행거리에 따른 4%(1만5천km이하) ~ 36%(3천km이하)특약할인</div>
+                    <div class="comment">3.무사고(3년이상) 평균 11.5%할인</div>
+                    <div class="comment">4.블랙박스 장착시 2.2% 할인특약(신차~12년 이전차량)</div>
+                    <div class="comment">5.자녀할인특약 2% ~ 14% 할인(부부/1인 한정 및 만6세이하, 태아보험)</div>
+                    <div class="comment">6.교통법규 준수 할인 7.5%</div>
+                    <div class="comment">7.커넥티드카 7.1% 특약할인(사고통보장치 설치)</div>
+                    <div class="comment">8.커넥티드카 안전운전 9% 특약할인(안전운전점수 70점 이상)</div>
+                    <div class="comment">9.차선이탈 경고 장치 장착시 4.5% 특약할인</div>
+                    <div class="comment">10.전방충돌 경고장치 장착시 1.5% 특약할인</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h3.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">DB손해보험 다이렉트 자동차보험</div>
+                    <div class="comment">1.DB손해보험 오프라인 대비 평균 17.2% 저렴</div>
+                    <div class="comment">2.주행거리 연간 2천km이하 주행시 35% 특약할인(7~10인승)</div>
+                    <div class="comment">3.최근 3년 연속 무사고 시 최대 15.9% 할인</div>
+                    <div class="comment">4.블랙박스 장착시 개인승용 2.5%특약할인(차량연식 2년이하)</div>
+                    <div class="comment">5.임신 중이신 고객님은 17% 베이비인카 특약할인(태아인경우)</div>
+                    <div class="comment">6.차선이탈 경고장치 특약할인 2.8% (개인승용 장치 장착시, 전담보평균)</div>
+                    <div class="comment">7.전방충돌 경고장치 특약할인 6.4% (개인승용 장치 장착시, 전담보평균)</div>
+                    <div class="comment">8.안전운전(UBI)특약 12% 특약할인(최근 6개월 내 1천km 이상 주행 및 안전운전점수 71점 이상 시)</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h4.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">흥국화재 다이렉트로 저렴하게, 조건만 되신다면 이 모든 혜택 받으세요~</div>
+                    <div class="comment">1.자사 오프라인 대비 평균17.5% 저렴</div>
+                    <div class="comment">2.주행거리할인특약 2천km이하 주행시 37.5%할인</div>
+                    <div class="comment">3.무사고운전 13.2%할인(무사고 3년이상)</div>
+                    <div class="comment">4.블랙박스 특약 1.0%할인(차량연식 10년미만)</div>
+                    <div class="comment">5.자녀할인 특약 1~12%할인(태아:12%/만0세:7%/만1~5세:3%/만6~12세:1%)</div>
+                    <div class="comment">6.첨단안전장치 특약 자차 2%, 자차외 2% 할인(출고시 전방충돌 방지장치 or 자동긴급제동장치 장착시)</div>
+                    <div class="comment">7.차선이탈 경고장치 특약 자차 1%, 자차외 4% 할인(출고시 차선이탈 방지장치 or 경고장치 장착시)</div>
+                    <div class="comment">8.자동차 정비 할인 모바일 쿠폰북 제공(단, 단기계약(92일 미만) 및 책임보험 가입고객의 경우 제외)</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h5.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">산출까지 길어야 5분! 직접 가입해서 저렴하고 적게 타서 환급받는 한화 다이렉트 자동차보험</div>
+                    <div class="comment">1.주행거리 2천~1만8천km이하 42~2% 특약할인(개인용,차종별상이)</div>
+                    <div class="comment">2.다이렉트 평균12.8% 저렴 (개인용 기준) 당사 오프라인 대비</div>
+                    <div class="comment">3.무사고 3년 이상이면 12.3% 할인(개인용 기준)</div>
+                    <div class="comment">4.자녀가 있다면 9% 특약 할인 (태아~만 1세 기준, 만 6세 이하는 6%, 개인용 기준)</div>
+                    <div class="comment">5.블랙박스 장착했다면 3%특약 할인 (개인용, 신차기준)</div>
+                    <div class="comment">6.교통법규준수하셨다면 8.5% 할인 (무사고자, 경력3년이상)</div>
+                    <div class="comment">7.차선이탈경고장치 장착했다면 평균 2.9% 특약 할인 (개인용/업무용 승용, 출고시 장착, 중고연식에 따라 상이)</div>
+                    <div class="comment">8.전방충돌방지장치 장착했다면 평균 2% (개인용/업무용 승용, 출고시 장착, 중고연식에 따라 상이)</div>
+                    <div class="comment">9.만33세~55세를 위하여 평균 9.3% 특약 할인 (만 30세 이상 특약 대비, 기명1인, 부부특약 가입시)</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h6.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">내 차 보험료, AXA 손해보험의 다양한 특약 할인 혜택으로 저렴하게!</div>
+                    <div class="comment">1.마일리지 38.8% 특약할인 (2천Km/개인용 후할인)</div>
+                    <div class="comment">2.블랙박스 2.6% 특약할인(개인용)</div>
+                    <div class="comment">3.무사고 할인 최대 9.9%(3년 무사고)</div>
+                    <div class="comment">4.자녀할인특약 6%(만7세이하 6%, 만8세~12세 3%, 만13세~만15세 이하 2%)</div>
+                    <div class="comment">5.인터넷 가입시 평균 4% 저렴(자사 상담원 가입채널 대비)</div>
+                    <div class="comment">6.3049특약 평균 9% 할인(운전자 연령 만30세~49세일 경우/기명1인,부부한정)</div>
+                    <div class="comment">7. 자동비상제동장치 4.7% 특약할인</div>
+                    <div class="comment">8. 차선이탈경고장치 4.4% 특약할인</div>
+                    <div class="comment">9. 커넥티드카 안전운전 특약 9% 할인 (최근 90일간 최소 500km 이상 주행 및 안전운전 점수 70점 이상)</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h7.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">마일리지 先 할인 특약 선택하고 자동차보험 가입 즉시 할인 받으세요!</div>
+                    <div class="comment">1. 마일리지 할인특약 택1</div>
+                    <div class="comment">① 마일리지 선할인특약 19% 할인 (가입즉시, 연간 실주행거리 1만km이하 약정)</div>
+                    <div class="comment">② 마일리지 후할인특약 42% 할인 (2천km이하 주행 시)</div>
+                    <div class="comment">2. 3년 무사고시 최대 19% 할인</div>
+                    <div class="comment">3. 자사 오프라인대비 평균 15% 저렴</div>
+                    <div class="comment">4. 차선이탈 방지 할인특약 8% 할인 (승용차(경차제외) 출고 장착 시)</div>
+                    <div class="comment">5. 자녀 할인특약 5% 할인 (만7세 이하, 지속형 가입 시)</div>
+                    <div class="comment">6. 블랙박스 할인특약 차량연식9년 이내 5%, 10년 이상 1%</div>
+                    <div class="comment">7. 전방충돌방지장치 할인특약 4% 할인 (승용차(경차제외) 출고 장착 시)</div>
+                    <div class="comment">8. 자사 원데이자동차보험 이용경력이 있는 경우 자동차보험 최초 가입 시 3% 할인 (다인승 제외)</div>
+                    <div class="comment">9. 만 65세 이상 도로교통교육을 이수한 경우 자동차보험 가입 보험료의 5% 할인특약(단, 운전인지·지각평과 결과점수가 42점 이상인 경우)</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgBox"><img src="../../static/img/h8.png" alt=""></div>
+                <div class="commentGroup">
+                    <div class="subject">인터넷으로 가격은 저렴하게, 다양한 특약 할인 혜택까지 !</div>
+                    <div class="comment">1. 마일리지 특약 35% 할인 (연간 주행거리 3천km 이하 주행 시</div>
+                    <div class="comment">2∙ 자녀할인 특약 7% 할인 (만 7세 이하(태아포함), 부부 및 1인 한정)</div>
+                    <div class="comment">3. 차선이탈경고장치특약 3% 할인 (연식 4년이하, 승용차 출고 장착 시)</div>
+                    <div class="comment">4. 블랙박스장치특약 2% 할인</div>
+                    <div class="comment">5. 메리츠 오프라인 대비 평균 16.2% 낮은 보험료</div>
+                    <div class="comment">6. 3년 이상 무사고 고객 20% 할인</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

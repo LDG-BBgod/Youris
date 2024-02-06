@@ -1,0 +1,237 @@
+.section1{
+
+}
+.section1 .inner{
+  padding: 100px 0;
+}
+.section1 .text1{
+  font-size: 40px;
+  font-weight: bold;
+  color: #5b8def;
+  padding-bottom: 20px;
+  border-bottom: solid 5px #5b8def;
+}
+.section1 .gridBox{
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section1 .gridBox .grid1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .gridBox .grid1 img{
+  height: 120px;
+}
+.section1 .gridBox .grid1 .text2{
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3F3D56;
+}
+.section1 .gridBox .grid1 .text3{
+  font-size: 22px;
+  font-weight: bold;
+  color: #3F3D56;
+  line-height: 35px;
+}
+.section1 .gridBox .grid2{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section1 .gridBox .grid2 .content{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.section1 .gridBox .grid2 .content img{
+  height: 40px;
+  margin-right: 20px;
+}
+.section1 .gridBox .grid2 .content .text2{
+  font-size: 22px;
+  font-weight: bold;
+  color: #3F3D56;
+}
+
+
+.section2{
+
+}
+.section2 .inner{
+  padding: 20px 0 100px 0;
+}
+.section2 .flexBox{
+  display: flex;
+  flex-direction: column;
+}
+.section2 .text1{
+  font-size: 22px;
+  font-weight: bold;
+  color: #5b8def;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.section2 input{
+  box-sizing: border-box;
+  height: 38px;
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  border: solid 1px #707070;
+  border-radius: 10px;
+}
+.section2 input::placeholder{
+  font-size: 16px;
+}
+.section2 textarea{
+  padding: 8px;
+  font-size: 18px;
+  border: solid 1px #707070;
+  border-radius: 10px;
+  height: 200px;
+  resize: none;
+}
+.section2 button{
+  border: none;
+  border-radius: 15px;
+  width: 300px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: auto;
+  background-color: #03C988;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .section1{
+
+  }
+  .section1 .inner{
+    padding: 50px 15px 20px 15px;
+  }
+  .section1 .text1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b8def;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #5b8def;
+  }
+  .section1 .gridBox{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .section1 .gridBox .grid1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section1 .gridBox .grid1 img{
+    height: 60px;
+  }
+  .section1 .gridBox .grid1 .text2{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3F3D56;
+  }
+  .section1 .gridBox .grid1 .text3{
+    font-size: 14px;
+    font-weight: bold;
+    color: #3F3D56;
+    line-height: 24px;
+  }
+  .section1 .gridBox .grid2{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section1 .gridBox .grid2 .content{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .section1 .gridBox .grid2 .content img{
+    height: 30px;
+    margin-right: 20px;
+  }
+  .section1 .gridBox .grid2 .content .text2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3F3D56;
+  }
+  
+  
+  .section2{
+  
+  }
+  .section2 .inner{
+    padding: 0 15px 50px 15px;
+  }
+  .section2 .flexBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 .text1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #5b8def;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .section2 input{
+    box-sizing: border-box;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: solid 1px #707070;
+    border-radius: 5px;
+  }
+  .section2 input::placeholder{
+    font-size: 12px;
+  }
+  .section2 textarea{
+    padding: 8px;
+    font-size: 14px;
+    border: solid 1px #707070;
+    border-radius: 5px;
+    height: 200px;
+    resize: none;
+  }
+  .section2 button{
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    background-color: #03C988;
+  }
+}

@@ -1,0 +1,58 @@
+{% extends "sBase.html" %}
+{% load humanize %}
+
+{% block header %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/sAbout.css' %}?ver=11.29">
+{% endblock %}
+
+{% block contents %}
+<div class="section1">
+    <div class="inner">
+        <div class="text1">About CABO</div>
+        <div class="spacer"></div>
+        <div class="text2">카보는 다이렉트 자동차 보험시장을 혁신하는 스타트업입니다.</div>
+        <div class="text2">23년 12월 법인보험중개사로  등록 후</div>
+        <div class="text2">24년 2월 <span>"다이렉트 카보"</span> 서비스 출시를 목표로 하고 있습니다.</div>
+    </div>
+</div>
+<div class="section2">
+    <div class="inner">
+        <div class="flexBox1">
+            <img src="../../static/img/aboutBar.svg" alt="bar">
+            <div class="spacer"></div>
+            <div class="flexBox2">
+                <div class="text1">2023년</div>
+                <div class="content">
+                    <div class="text2">03월</div>
+                    <div class="text3"> 주식회사 카보 설립</div>
+                </div>
+                <div class="content">
+                    <div class="text2">05월</div>
+                    <div class="text3">(주)씨앤씨애드와 광고계약 체결</div>
+                </div>
+                <div class="content">
+                    <div class="text2">06월</div>
+                    <div class="text3">(주)KB손해보험과 광고계약 체결</div>
+                </div>
+                <div class="content">
+                    <div class="text2">10월</div>
+                    <div class="text3">다이렉트 카보 규제 관련 금융위 회신문 확보</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section3">
+    <div class="inner">
+        <div class="text1">Partners</div>
+        <div class="imgBox">
+            <img class="img1" src="../../static/img/partnerLogo1.png" alt="clogo">
+            <img class="img2" src="../../static/img/partnerLogo2.jpg" alt="clogo">
+            <img class="img3" src="../../static/img/partnerLogo3.png" alt="clogo">
+            <img class="img4" src="../../static/img/partnerLogo4.jpg" alt="clogo">
+            <img class="img5" src="../../static/img/partnerLogo5.jpg" alt="clogo">
+        </div>
+    </div>
+</div>
+{% endblock %}

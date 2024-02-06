@@ -1,0 +1,450 @@
+a{
+    text-decoration: none;
+}
+.section1{
+    background-image: url(../img/background.png);
+    padding-top: 140px;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .logo-box{
+    display: none;
+    margin-top: 40px;
+}
+.section1 .logo-box img{
+
+}
+.section1 .content-box{
+    margin-top: 40px;
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 3px 3px 8px #ccc;
+    border-radius: 10px;
+}
+.section1 .header-box{
+    width: 100%;
+}
+.section1 .header-box ul{
+    height: 90px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+.section1 .header-box ul li{
+    margin: 0 4px;
+    background: #5B8DEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .header-box ul li:hover{
+    cursor: pointer;
+}
+.section1 .header-box ul li:first-child{
+    margin-left: 0;
+    border-radius: 10px 0 0 0;
+}
+.section1 .header-box ul li:last-child{
+    margin-right: 0;
+    border-radius: 0 10px 0 0;
+}
+.section1 .header-box ul li .date{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 15px;
+}
+.section1 .header-box ul li .day{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 8px;
+}
+.section1 .header-box ul li .date.select{
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.683);
+}
+.section1 .header-box ul li .day.select{
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.683);
+}
+.section1 .inner-box{
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .time-box{
+    position: relative;
+    width: 100%;
+    height: 360px;
+}
+.section1 .time-box .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 30px;
+    color: #CFCFCF;
+}
+.section1 .time-box ul{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.section1 .time-box ul li{
+    position: relative;
+    justify-self: center;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5B8DEF;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border: solid 2px #5B8DEF;
+    border-radius: 8px;
+}
+.section1 .time-box ul li span{
+    position: absolute;
+    font-size: 13px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section1 .time-box ul .select{
+    background-color: #5B8DEF;
+    color: #fff;
+}
+.section1 .time-box ul .imposible{
+    border: solid 2px #CFCFCF;
+    color: #CFCFCF;
+}
+.section1 .time-box ul li:hover{
+    cursor: pointer;
+}
+.section1 .agreement{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.section1 .agreement input{
+    margin: 0;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    background: url(../img/consulting_agree.svg) no-repeat;
+    background-size: 20px 20px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.section1 .agreement input:checked{
+    height: 20px;
+    width: 20px;
+    background: url(../img/consulting_agreeCheck.svg) no-repeat;
+    background-size: 20px 20px;
+}
+.section1 .agreement label{
+    margin-left: 5px;
+}
+.section1 .agreement a{
+    margin-left: 10px;
+    color: #a5a5a5;
+}
+.section1 .bottom-content{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+    text-align: center;
+}
+.section1 .bottom-content .button-tool{
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #34464B;
+    border: solid 2px #34464B;
+    border-radius: 15px;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    align-self: end;
+}
+.section1 .bottom-content .button-tool:hover{
+    cursor: pointer;
+}
+.section1 .bottom-content .button-tool.select{
+    background-color: #5B8DEF;
+    border: none;
+    color: #fff;
+}
+.section1 .bottom-content .text-box{
+    width: 100%;
+    position: relative;
+    align-self: end;
+}
+.section1 .bottom-content .text-box input{
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 0;
+    width: 100%;
+    border: none;
+    border-bottom: solid 2px #34464B;
+    font-size: 25px;
+    font-weight: bold;
+    color: #34464B;
+    line-height: 35px;
+}
+.section1 .bottom-content input::-webkit-input-placeholder { color: #CFCFCF;}  /*크롬*/
+.section1 .bottom-content input::-ms-input-placeholder { color: #CFCFCF;}      /*엣지,익스플로러*/
+.section1 .bottom-content input::-moz-input-placeholder { color: #CFCFCF;}     /*파폭*/
+.section1 .bottom-content input:focus {outline: none;}
+.section1 .bottom-content .text-box .input-bottom-text{
+    position: absolute;
+    top: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #CFCFCF;
+}
+
+.section1 .bottom-content .button-submit{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    align-self: end;
+}
+.section1 .bottom-content .button-submit:hover{
+    cursor: pointer;
+}
+.section1 .bottom-content .button-submit .box-content{
+    box-sizing: border-box;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5B8DEF;
+    border: none;
+    border-radius: 15px;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+}
+.section1 .bottom-content .button-submit .arrow-box{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 20px;
+}
+.section1 .bottom-content .button-submit .arrow-box img{
+    height: 20px;
+}
+.section1 .error{
+    position: absolute;
+    bottom: -23px;
+    right: 50px;
+    font-size: 15px;
+    font-weight: bold;    
+    color: #E96A6A;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    header{
+        display: none;
+    }
+    .section1{
+        padding-top: 0;
+        height: 650px;
+        background: #fff;
+    }
+    .section1 .logo-box{
+        display: block;
+        margin-top: 20px;
+    }
+    .section1 .logo-box img{
+        height: 40px;
+    }
+    .section1 .content-box{
+        margin-top: 15px;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    .section1 .header-box{
+    }
+    .section1 .header-box ul{
+        height: 50px;
+    }
+    .section1 .header-box ul li{
+        padding-top: 2px;
+        margin: 0 1px;
+    }
+    .section1 .header-box ul li:first-child{
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .section1 .header-box ul li:last-child{
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .section1 .header-box ul li .date{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .section1 .header-box ul li .day{
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .section1 .header-box ul li .date.select{
+
+    }
+    .section1 .header-box ul li .day.select{
+
+    }
+    .section1 .inner-box{
+        padding: 0 10px;
+    }
+    .section1 .time-box{
+        height: 450px;
+    }
+    .section1 .time-box .text{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    .section1 .time-box ul{
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section1 .time-box ul li{
+        margin-bottom: 15px;
+        font-size: 14px;
+        width: 85%;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 7px;
+    }
+    .section1 .time-box ul li span{
+        position: absolute;
+        font-size: 10px;
+        top: 36px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .section1 .agreement input{
+        margin: 0;
+        margin-left: 10px;
+        height: 15px;
+        width: 15px;
+        background-size: 15px 15px;
+        -webkit-appearance: none;
+        cursor: pointer;
+    }
+    .section1 .agreement input:checked{
+        height: 15px;
+        width: 15px;
+        background-size: 15px 15px;
+    }
+    .section1 .agreement label{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .section1 .agreement a{
+        margin-left: 7px;
+        color: #a5a5a5;
+        font-size: 10px;
+    }
+    .section1 .bottom-content{
+        width: 94%;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+    }
+    .section1 .bottom-content .button-tool{
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 15px;
+        border-radius: 5px;
+        width: 75px;
+        height: 28px;
+        line-height: 28px;
+    }
+    .section1 .bottom-content .button-tool.select{
+        background-color: #5B8DEF;
+        color: #fff;
+    }
+    .section1 .bottom-content .text-box{
+        width: 100%;
+        position: relative;
+    }
+    .section1 .bottom-content .text-box input{
+        box-sizing: border-box;
+        padding: 5px;
+        margin-right: 0;
+        width: 100%;
+        border: solid 2px #34464B;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #34464B;
+        line-height: 20px;
+    }
+    .section1 .bottom-content input:focus {outline: none;}
+    .section1 .bottom-content .text-box .input-bottom-text{
+        position: absolute;
+        top: 40px;
+        font-size: 11px;
+        font-weight: bold;
+        color: #CFCFCF;
+    }
+    
+    .section1 .bottom-content .button-submit{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        align-self: center;
+    }
+    .section1 .bottom-content .button-submit .box-content{
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        width: 100vw;
+        height: 45px;
+        line-height: 45px;
+        background-color: #5B8DEF;
+    }
+    .section1 .bottom-content .button-submit .arrow-box{
+        display: none;
+    }
+    .section1 .error{
+        position: fixed;
+        bottom: 50px;
+        left: 10px;
+        font-size: 12px;
+        font-weight: bold;    
+        color: #E96A6A;
+    }
+    footer{
+        display: none;
+    }
+}

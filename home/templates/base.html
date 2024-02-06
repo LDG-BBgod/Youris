@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <script>
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="../../static/img/logo.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?ver=12.07">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="{% static 'js/main.js' %}?ver=12.07.1"></script>
+
+    {% block header %}
+    {% endblock %}
+    
+    <title>CABO</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mask" id="mask" style="display: none;"></div>
+        <img class="loading-img" id="loadingImg" style="display: none;" src="../../static/img/loadingShort.svg">
+        <header>
+            <div class="inner clearfix">
+                <div class="logo float-left">
+                    <a class="logo-name" href="/serviceHome">다이렉트</a>
+                    <a class="" href="/serviceHome"><img src="../../static/img/logo_blue.svg" alt="logo"></a>
+                </div>
+                <ul class="menu float-left">
+                    <img class="menuBar hover" src="../../static/img/menu_bar.svg" alt="메뉴바" onclick="OpenMenu()">
+                    <img class="menuX hover" src="../../static/img/menu_x.svg" alt="메뉴x" onclick="CloseMenu()">
+                    <div class="menuGroup">
+                        <div class="contentGroup">
+                            <img src="../../static/img/header_menu1.png" alt="">
+                            <a class="menuContent" href="/selfCompareHome" onclick="sSaveLog('서비스페이지 헤더 Self비교가입 버튼')">다이렉트 보험 Self 비교가입</a>
+                        </div>
+                        <div class="contentGroup">
+                            <img src="../../static/img/header_menu2.png" alt="">
+                            <a class="menuContent" href="/consulting" onclick="sSaveLog('서비스페이지 헤더 전화상담가입 버튼')">전화상담 가입</a>
+                        </div>
+                        <div class="contentGroup">
+                            <img src="../../static/img/header_menu3.png" alt="">
+                            <div class="menuContent hover" onclick="OpenChat(); sSaveLog('서비스페이지 실시간 채팅상담 버튼')">실시간 채팅상담</div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="addInfo float-right">
+                    <div>대표상담번호 044-715-7442</div>
+                </div>
+            </div>
+        </header>
+        <div class="middle">
+            {% block contents %}
+            {% endblock %}
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="center">
+                    <div class="left-side float-left">
+                        <p>상호 : 주식회사 카보</p>
+                        <p>대표 : 이동진</p>
+                        <p>주소 : 충청남도 계룡시 장안 1길 6, 202호</p>
+                        <p>사업자번호 : 291-86-02840</p>
+                    </div>
+                    <img src="../../static/img/logo_gray.svg" alt="">
+                    <div class="right-side float-right">
+                        <p>영업 시간 : 주중 09:00 ~18:00 | 대표번호 : 044-715-7442</p>
+                        <p>Email : ceo@cabo.kr</p>
+                        <p>Copyright 카보. All rights Reserved</p>
+                        <p>개인정보 책임 관리자 : 이동진</p>
+                    </div>
+                    <div class="logo"></div>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>

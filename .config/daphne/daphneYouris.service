@@ -1,0 +1,19 @@
+[Unit]
+Description=daphne daemon
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/ubuntu/Youris/Youris/
+
+Environment="DJANGO_SETTINGS_MODULE=CAbot.settings"
+ExecStart=/home/ubuntu/CAbot/venv/bin/daphne -b 0.0.0.0 -p 8081 CAbot.asgi:application
+
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+Restart=on-abort
+PrivateTmp=true
+StandardError=file:/tmp/daphneYouris-error.log
+
+[Install]
+WantedBy=multi-user.target
