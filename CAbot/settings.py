@@ -145,7 +145,7 @@ pymysql.install_as_MySQLdb()
 
 #배포환경
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',

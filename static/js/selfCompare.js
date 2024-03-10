@@ -1,5 +1,5 @@
 let jobIndex, threadIndex, jti, twoWayTimestamp, commDetailParam;
-console.log(jobIndex);
+
 let mileCheck = false;
 function FormCheck(type, value) {
   if (type == "birth") {
@@ -297,7 +297,7 @@ function SendAuth() {
       submitCheck = false;
     }
   }
-
+  console.log(submitCheck)
   if (submitCheck) {
     $("#sendAuthPhone").hide();
     $("#sectionAuth").show();
