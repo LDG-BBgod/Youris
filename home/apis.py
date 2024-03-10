@@ -15,9 +15,9 @@ environ.Env.read_env(
 )
 
 # 아빠꺼
-demo_client_id = 'fb72d895-2cdc-403f-8e79-6fd2d66b6744'
-demo_client_secret = '54f3c2a1-f794-41e2-b6c3-84be81d2cf35'
-public_key = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArVZP12yxSGPmMbVI9fSSl7gQn4rlD6bozSCMZa4zK9/C2qtCfYsN0aUEfOkxfZ/zc5R3T1SFCitePhAz7kLklGIy2kVk7s4AVSA2ivrNefLP88Og26yOZsb6z2HqfBEqQ6B/jYuVlEhMbSVY+K541fW7vFxECz07Ri5VYfRNVGh9eyUcxEKiel15aRgHzEI0BzooX0OSDAwPuX3MF9fTLg1fY9EhdYOVWv59egDtkD6ZAlgVx4MACGnanmQFf5fWKRoZnTMJOvY3RkCMBQ4DQr9TpvlJCQ8RJJtQjsTE8kZqITn5mHi0NtKI2jqx9AF6GiHiGfXdL0Y45w/Bsogu3wIDAQAB'
+demo_client_id = '46785027-9de8-4aec-b761-c43a47fe67f1'
+demo_client_secret = '4fc015fa-cbd7-4dce-8cba-507dd7de94f5'
+public_key = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuJq++S8+ICuGqjl7py6OOahVwYHG5yIg7B4kblfm8vlmCibwc4Is6VvdTMXSr9H3MkN/iWkOUGIFFwgCDvLgrd2GB0MnCE+nnqI7MkoYhrhw7p2yvS5oUxiQPY4jGsYpYpxcJGwGo7bJuq52+LZIpYhruSXHy7+F/toiyA5sKeN/OP3u5hiDQsXHLbx/q+yR0tURZya5OM30MhZLrGbWPO9tzgmvrqZJxp9GDdmuv+ASUk/OocpjujZ1RnCwpaGxwwsg7u5PhkJuozZYk9tkg8jTxHhYAf6XDReAjLLyvTzIhvYKfAlKi4XIM+IRcvxe6NduGRGaF75hCH5U6bobmQIDAQAB'
 
 # 나 형 엄마 연주꺼 다씀
 
